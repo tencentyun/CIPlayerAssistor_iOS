@@ -2,7 +2,7 @@
 CIPlayerAssistor 为数据万象提供给客户希望使用第三方播放器或自研播放器开发播放万象自研私有加密m3u8资源文件，常用于有自定义播放器功能需求的用户。
 
 ### 相关资源
-CIPlayerAssistor iOS SDK 以及 Demo 项目，请参见 [CIPlayerAssistor_iOS]()
+CIPlayerAssistor iOS SDK 以及 Demo 项目，请参见 [CIPlayerAssistor_iOS](https://github.com/tencentyun/CIPlayerAssistor_iOS)
 
 ### 集成指引
 #### 环境要求
