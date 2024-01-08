@@ -1,0 +1,6 @@
+framework module CIPlayerAssistor {
+  umbrella header "CIPlayerAssistor.h"
+
+  export *
+  module * { export * }
+}
