@@ -17,23 +17,14 @@ CIPlayerAssistor iOS SDK 以及 Demo 项目，请参见 [CIPlayerAssistor_iOS](h
 ```
 
 ### 示例代码
-以系统 AVPlayer 播放器为例，展示如何使用 CIPlayerAssistor SDK 播放私有加密m3u8。
+#### AVPlayer
 ```
-// 创建媒体信息对象，
-// object:媒体文件全路径，如：output/test.m3u8
-// bucket:媒体文件所在桶名，格式 桶名-appId
-// fileUrl:媒体文件链接，如：https://bucket-1250000000.cos.myqcloud.com/output/test.m3u8。
-//         若为私有读，需携带签名信息。
-CIMediaInfo * media = [[CIMediaInfo alloc]initWithObject:@"output/test.m3u8"
-                                                  bucket:@"bucket-1250000000"
-                                                 fileUrl:@"https://bucket-1250000000.cos.myqcloud.com/output/test.m3u8"];
-
 // 创建媒体配置对象
-// MediaInfo:上面创建媒体信息对象。
+// fileUrl：文件链接
 // m3u8Type:m3u8加密类型
 //    CIM3u8TypeStandard：标准加密。
 //    CIM3u8TypePrivate：私有加密。
-CIMediaConfig * config = [[CIMediaConfig alloc]initWithMediaInfo:media
+CIMediaConfig * config = [[CIMediaConfig alloc]initWithFileUrl:@"http://test/test.m3u8"
                                              m3u8Type:CIM3u8TypePrivate];
 
 // 使用CIPlayerAssistor 请求token并构建用于播放的m3u8文件链接。
@@ -50,5 +41,23 @@ CIMediaConfig * config = [[CIMediaConfig alloc]initWithMediaInfo:media
     self.playerLayer.frame = CGRectMake(0, 100, self.view.bounds.size.width, 300);
     [self.view.layer addSublayer:self.playerLayer];
     [self.myPlayer play];
+}];
+```
+#### TXVodPlayer
+
+对于 TXVodPlayer 的集成以及配置，这里不再赘述，请参考 TXVodPlayer 相关文档。 
+
+```
+
+// 构建 CIMediaConfig 配置对象，同AVPlayer。
+CIMediaConfig * config = [[CIMediaConfig alloc]initWithFileUrl:InputConfig.fileUrl
+                                             m3u8Type:self.isPrivate];
+
+[[CIPlayerAssistor singleAssistor] buildPlayerUrlWithConfig:self.config getTokenBlock:^(CIMediaConfig * _Nullable config, CIPlayerAssistorGetTokenCallBack  _Nonnull callBack) {
+    // 此处用config 在业务服务构建token并使用callBack回调给SDK; 具体可以参考下方服务端配置实例
+    NSString * token = @"";//从业务后台请求token信息。
+    callBack(token);
+} buildUrlcallBack:^(NSString * _Nullable url, NSError * _Nullable error) {
+    [_txVodPlayer startVodPlay:url];
 }];
 ```

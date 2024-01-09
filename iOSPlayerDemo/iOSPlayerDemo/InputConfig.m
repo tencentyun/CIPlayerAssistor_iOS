@@ -16,7 +16,6 @@
 }
 + (NSString *)fileUrl{
     return   @"文件url";
-        
 }
 
 + (NSString *)playSkey{

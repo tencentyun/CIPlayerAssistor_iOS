@@ -9,6 +9,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import <CIPlayerAssistor/CIPlayerAssistor.h>
 #import "InputConfig.h"
+#import "TokenBuilder.h"
 @interface AVPlayerDemoController ()
 @property (strong, nonatomic)AVPlayer *myPlayer;//播放器
 @property (strong, nonatomic)AVPlayerItem *item;//播放单元
@@ -27,14 +28,12 @@
 
 -(void)setupPlayer{
   
-    CIMediaInfo * media = [[CIMediaInfo alloc]initWithObject:InputConfig.object
-                                                      bucket:InputConfig.bucketId
-                                                     fileUrl:InputConfig.fileUrl];
-    self.config = [[CIMediaConfig alloc]initWithMediaInfo:media
+    self.config = [[CIMediaConfig alloc]initWithFileUrl:InputConfig.fileUrl
                                                  m3u8Type:self.isPrivate];
     
     [[CIPlayerAssistor singleAssistor] buildPlayerUrlWithConfig:self.config getTokenBlock:^(CIMediaConfig * _Nullable config, CIPlayerAssistorGetTokenCallBack  _Nonnull callBack) {
-        callBack(@"");
+        NSString * token = [[[TokenBuilder alloc]initWithType:self.isPrivate withPublicKey:config.publicKey] buildToken];
+        callBack(token);
     } buildUrlcallBack:^(NSString * _Nullable url, NSError * _Nullable error) {
         AVPlayerItem *item = [[AVPlayerItem alloc] initWithURL:[NSURL URLWithString:url]];
         self.myPlayer = [AVPlayer playerWithPlayerItem:item];

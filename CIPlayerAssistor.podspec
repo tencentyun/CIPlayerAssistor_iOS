@@ -10,6 +10,6 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target    = '12.0'
   s.ios.vendored_framework   = 'CIPlayerAssistor/CIPlayerAssistor.framework'
-  s.dependency 'CocoaAsyncSocket';
   s.dependency 'OpenSSL-Universal';
+  s.dependency 'GCDWebServer';
 end

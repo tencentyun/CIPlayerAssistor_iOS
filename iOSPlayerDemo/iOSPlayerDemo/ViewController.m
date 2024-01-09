@@ -7,6 +7,7 @@
 
 #import "ViewController.h"
 #import "AVPlayerDemoController.h"
+#import "TXPlayerDemoController.h"
 
 @interface ViewController ()
 
@@ -21,6 +22,12 @@
 
 - (IBAction)avPlayer:(UIButton *)sender {
     AVPlayerDemoController * avPlayer = [AVPlayerDemoController new];
+    avPlayer.isPrivate = sender.tag;
+    avPlayer.title = sender.tag == 1 ? @"私有加密" : @"标准加密";
+    [self.navigationController pushViewController:avPlayer animated:YES];
+}
+- (IBAction)txPlayer:(UIButton *)sender {
+    TXPlayerDemoController * avPlayer = [TXPlayerDemoController new];
     avPlayer.isPrivate = sender.tag;
     avPlayer.title = sender.tag == 1 ? @"私有加密" : @"标准加密";
     [self.navigationController pushViewController:avPlayer animated:YES];

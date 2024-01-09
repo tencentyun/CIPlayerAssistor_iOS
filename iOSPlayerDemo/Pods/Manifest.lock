@@ -1,8 +1,10 @@
 PODS:
   - CIPlayerAssistor (1.0.0):
-    - CocoaAsyncSocket
+    - GCDWebServer
     - OpenSSL-Universal
-  - CocoaAsyncSocket (7.6.5)
+  - GCDWebServer (3.5.4):
+    - GCDWebServer/Core (= 3.5.4)
+  - GCDWebServer/Core (3.5.4)
   - OpenSSL-Universal (1.1.2200)
 
 DEPENDENCIES:
@@ -10,7 +12,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
-    - CocoaAsyncSocket
+    - GCDWebServer
     - OpenSSL-Universal
 
 EXTERNAL SOURCES:
@@ -18,10 +20,10 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CIPlayerAssistor: d8855742eb65f8841c6df13f3e207225407b7fa0
-  CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
+  CIPlayerAssistor: 7017153ec6211b86ac967c8c63f8c386df5a0d41
+  GCDWebServer: 2c156a56c8226e2d5c0c3f208a3621ccffbe3ce4
   OpenSSL-Universal: 6e1ae0555546e604dbc632a2b9a24a9c46c41ef6
 
-PODFILE CHECKSUM: 79ee5f0f08c546b116444a20ae4c6839045c769e
+PODFILE CHECKSUM: d0a1d459a787dd1f02986ffb7c48b218a0337190
 
 COCOAPODS: 1.12.1

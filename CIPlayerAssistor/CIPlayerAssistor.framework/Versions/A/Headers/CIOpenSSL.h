@@ -24,7 +24,6 @@ NS_ASSUME_NONNULL_BEGIN
 +(CIOpenSSLRSA *)generateRsa;
 
 + (NSData *)openssl_decryptWithPrivateStr:(NSString *)privateStr cipherData:(NSData *)cipherData padding:(int)padding;
-
 @end
 
 NS_ASSUME_NONNULL_END

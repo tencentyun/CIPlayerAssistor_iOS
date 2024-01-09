@@ -10,6 +10,9 @@
 		0A4FE01C58178AF477F47D75 /* Pods_iOSPlayerDemo_iOSPlayerDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1E5F2225EACD4B9EF6DD455 /* Pods_iOSPlayerDemo_iOSPlayerDemoUITests.framework */; };
 		40783D0A8CA89C1CFCB47CA4 /* Pods_iOSPlayerDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A129F320F930DECA1E5EBB21 /* Pods_iOSPlayerDemoTests.framework */; };
 		71182AECCDFA13649BA2DCD0 /* Pods_iOSPlayerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86B296DE67BCD241F88F4170 /* Pods_iOSPlayerDemo.framework */; };
+		D235C48B2B4D6DCC003D7682 /* TokenBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = D235C4882B4D6DCC003D7682 /* TokenBuilder.m */; };
+		D235C48C2B4D6DCC003D7682 /* QCloudJWTToken.m in Sources */ = {isa = PBXBuildFile; fileRef = D235C48A2B4D6DCC003D7682 /* QCloudJWTToken.m */; };
+		D235C48F2B4D714E003D7682 /* TXPlayerDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = D235C48D2B4D714D003D7682 /* TXPlayerDemoController.m */; };
 		D25B99BB2B0EF2D80032832A /* InputConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = D25B99BA2B0EF2D80032832A /* InputConfig.m */; };
 		D27D12602AFB64C600239D2F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D27D125F2AFB64C600239D2F /* AppDelegate.m */; };
 		D27D12632AFB64C600239D2F /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D27D12622AFB64C600239D2F /* SceneDelegate.m */; };
@@ -50,6 +53,12 @@
 		98D37A8252B380CA83BB7CA4 /* Pods-iOSPlayerDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSPlayerDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-iOSPlayerDemoTests/Pods-iOSPlayerDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A129F320F930DECA1E5EBB21 /* Pods_iOSPlayerDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSPlayerDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1E5F2225EACD4B9EF6DD455 /* Pods_iOSPlayerDemo_iOSPlayerDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSPlayerDemo_iOSPlayerDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D235C4872B4D6DCB003D7682 /* TokenBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TokenBuilder.h; sourceTree = "<group>"; };
+		D235C4882B4D6DCC003D7682 /* TokenBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TokenBuilder.m; sourceTree = "<group>"; };
+		D235C4892B4D6DCC003D7682 /* QCloudJWTToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCloudJWTToken.h; sourceTree = "<group>"; };
+		D235C48A2B4D6DCC003D7682 /* QCloudJWTToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCloudJWTToken.m; sourceTree = "<group>"; };
+		D235C48D2B4D714D003D7682 /* TXPlayerDemoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXPlayerDemoController.m; sourceTree = "<group>"; };
+		D235C48E2B4D714D003D7682 /* TXPlayerDemoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXPlayerDemoController.h; sourceTree = "<group>"; };
 		D25B99B92B0EF2D80032832A /* InputConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputConfig.h; sourceTree = "<group>"; };
 		D25B99BA2B0EF2D80032832A /* InputConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputConfig.m; sourceTree = "<group>"; };
 		D27D125B2AFB64C600239D2F /* iOSPlayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSPlayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -158,6 +167,10 @@
 		D27D125D2AFB64C600239D2F /* iOSPlayerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D235C4892B4D6DCC003D7682 /* QCloudJWTToken.h */,
+				D235C48A2B4D6DCC003D7682 /* QCloudJWTToken.m */,
+				D235C4872B4D6DCB003D7682 /* TokenBuilder.h */,
+				D235C4882B4D6DCC003D7682 /* TokenBuilder.m */,
 				D27D125E2AFB64C600239D2F /* AppDelegate.h */,
 				D27D125F2AFB64C600239D2F /* AppDelegate.m */,
 				D27D12612AFB64C600239D2F /* SceneDelegate.h */,
@@ -171,6 +184,8 @@
 				D27D12702AFB64C900239D2F /* main.m */,
 				D27D12982AFB680600239D2F /* AVPlayerDemoController.h */,
 				D27D12992AFB680600239D2F /* AVPlayerDemoController.m */,
+				D235C48E2B4D714D003D7682 /* TXPlayerDemoController.h */,
+				D235C48D2B4D714D003D7682 /* TXPlayerDemoController.m */,
 				D25B99B92B0EF2D80032832A /* InputConfig.h */,
 				D25B99BA2B0EF2D80032832A /* InputConfig.m */,
 			);
@@ -432,8 +447,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D235C48B2B4D6DCC003D7682 /* TokenBuilder.m in Sources */,
+				D235C48C2B4D6DCC003D7682 /* QCloudJWTToken.m in Sources */,
 				D27D12662AFB64C600239D2F /* ViewController.m in Sources */,
 				D27D12602AFB64C600239D2F /* AppDelegate.m in Sources */,
+				D235C48F2B4D714E003D7682 /* TXPlayerDemoController.m in Sources */,
 				D27D129B2AFB680600239D2F /* AVPlayerDemoController.m in Sources */,
 				D27D12712AFB64C900239D2F /* main.m in Sources */,
 				D25B99BB2B0EF2D80032832A /* InputConfig.m in Sources */,
@@ -629,7 +647,7 @@
 					"$(PROJECT_DIR)/iOSPlayerDemo",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tx.test.iOSPlayerDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tx.test.HLSPlayerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -662,7 +680,7 @@
 					"$(PROJECT_DIR)/iOSPlayerDemo",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tx.test.iOSPlayerDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tx.test.HLSPlayerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";

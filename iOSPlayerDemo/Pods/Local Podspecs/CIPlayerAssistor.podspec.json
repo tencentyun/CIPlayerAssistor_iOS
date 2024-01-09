@@ -18,10 +18,10 @@
     "vendored_frameworks": "CIPlayerAssistor/CIPlayerAssistor.framework"
   },
   "dependencies": {
-    "CocoaAsyncSocket": [
+    "OpenSSL-Universal": [
 
     ],
-    "OpenSSL-Universal": [
+    "GCDWebServer": [
 
     ]
   }

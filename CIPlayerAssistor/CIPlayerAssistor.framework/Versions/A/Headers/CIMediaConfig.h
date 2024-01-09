@@ -6,7 +6,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "CIMediaInfo.h"
 NS_ASSUME_NONNULL_BEGIN
 
 typedef enum : NSUInteger {
@@ -17,14 +16,13 @@ typedef enum : NSUInteger {
 @interface CIMediaConfig : NSObject
 
 @property (nonatomic,strong,readonly)NSString * publicKey;
-@property (nonatomic,strong,readonly)CIMediaInfo * mediaInfo;
+@property (nonatomic,strong,readonly)NSString * fileUrl;
 @property (nonatomic,assign,readonly)CIM3u8Type type;
-
 /// 过期时间 默认7200
 @property (nonatomic,assign)NSInteger expires;
 
--(instancetype)initWithMediaInfo:(CIMediaInfo *)mediaInfo
-                        m3u8Type:(CIM3u8Type) type;
+-(instancetype)initWithFileUrl:(NSString *)fileUrl
+                      m3u8Type:(CIM3u8Type) type;
 
 @end
 

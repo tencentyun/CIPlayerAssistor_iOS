@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6083682834ABE0AE7BD1CBF06CADD036"
-               BuildableName = "CocoaAsyncSocket.framework"
-               BlueprintName = "CocoaAsyncSocket"
+               BlueprintIdentifier = "AD904F32069787EFB2DFFE05EB82F5BD"
+               BuildableName = "GCDWebServer.framework"
+               BlueprintName = "GCDWebServer"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

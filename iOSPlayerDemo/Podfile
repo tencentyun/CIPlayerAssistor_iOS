@@ -6,7 +6,7 @@ target 'iOSPlayerDemo' do
 
   # Pods for iOSPlayerDemo
   pod 'CIPlayerAssistor', path:"../"
-  
+  pod 'TXLiteAVSDK_Player'
   target 'iOSPlayerDemoTests' do
     inherit! :search_paths
     # Pods for testing
