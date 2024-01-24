@@ -96,7 +96,7 @@ static NSString *QCloudHLSErrorDomain = @"com.tencent.jwt";
     NSString *encodedSegment = nil;
     
     if (encodedSegmentData) {
-        encodedSegment = [encodedSegmentData base64EncodedStringWithOptions:0];
+        encodedSegment = [self base64UrlEncodedStringFromBase64String:[encodedSegmentData base64EncodedStringWithOptions:0]];
     }
     
     return encodedSegment;
