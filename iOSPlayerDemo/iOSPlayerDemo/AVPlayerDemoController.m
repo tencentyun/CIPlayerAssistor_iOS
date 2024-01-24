@@ -30,11 +30,9 @@
   
     self.config = [[CIMediaConfig alloc]initWithFileUrl:InputConfig.fileUrl
                                                  m3u8Type:self.isPrivate];
+    NSString * token = [[[TokenBuilder alloc]initWithType:self.isPrivate withPublicKey:self.config.publicKey] buildToken];
     
-    [[CIPlayerAssistor singleAssistor] buildPlayerUrlWithConfig:self.config getTokenBlock:^(CIMediaConfig * _Nullable config, CIPlayerAssistorGetTokenCallBack  _Nonnull callBack) {
-        NSString * token = [[[TokenBuilder alloc]initWithType:self.isPrivate withPublicKey:config.publicKey] buildToken];
-        callBack(token);
-    } buildUrlcallBack:^(NSString * _Nullable url, NSError * _Nullable error) {
+    [[CIPlayerAssistor singleAssistor] buildPlayerUrlWithConfig:self.config withToken:token withSignature:nil buildUrlcallBack:^(NSString * _Nullable url, NSError * _Nullable error) {
         AVPlayerItem *item = [[AVPlayerItem alloc] initWithURL:[NSURL URLWithString:url]];
         self.myPlayer = [AVPlayer playerWithPlayerItem:item];
         self.playerLayer = [AVPlayerLayer playerLayerWithPlayer:self.myPlayer];

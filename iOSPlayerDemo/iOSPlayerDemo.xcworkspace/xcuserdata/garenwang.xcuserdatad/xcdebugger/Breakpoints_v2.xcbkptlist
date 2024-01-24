@@ -167,17 +167,49 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "05E0A6A5-C328-426D-A2D4-AFFC65C482B5"
+            uuid = "B8BE5C0B-BC2B-40BB-A89B-DB31A0C1327F"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "iOSPlayerDemo/TXPlayerDemoController.m"
+            filePath = "iOSPlayerDemo/AVPlayerDemoController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
             landmarkName = "-setupPlayer"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B8BE5C0B-BC2B-40BB-A89B-DB31A0C1327F - 173a5d62dba90bd9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[AVPlayerDemoController setupPlayer]"
+                  moduleName = "iOSPlayerDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/garenwang/Documents/code/CIPlayerAssistor_iOS/iOSPlayerDemo/iOSPlayerDemo/AVPlayerDemoController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "214">
+               </Location>
+               <Location
+                  uuid = "B8BE5C0B-BC2B-40BB-A89B-DB31A0C1327F - d5b1335b0b3dc2cf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__37-[AVPlayerDemoController setupPlayer]_block_invoke"
+                  moduleName = "iOSPlayerDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/garenwang/Documents/code/CIPlayerAssistor_iOS/iOSPlayerDemo/iOSPlayerDemo/AVPlayerDemoController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "81">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

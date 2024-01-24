@@ -42,11 +42,8 @@
     
     self.config = [[CIMediaConfig alloc]initWithFileUrl:InputConfig.fileUrl
                                                  m3u8Type:self.isPrivate];
-    
-    [[CIPlayerAssistor singleAssistor] buildPlayerUrlWithConfig:self.config getTokenBlock:^(CIMediaConfig * _Nullable config, CIPlayerAssistorGetTokenCallBack  _Nonnull callBack) {
-        NSString * token = [[[TokenBuilder alloc]initWithType:self.isPrivate withPublicKey:config.publicKey] buildToken];
-        callBack(token);
-    } buildUrlcallBack:^(NSString * _Nullable url, NSError * _Nullable error) {
+    NSString * token = [[[TokenBuilder alloc]initWithType:self.isPrivate withPublicKey:self.config.publicKey] buildToken];
+    [[CIPlayerAssistor singleAssistor] buildPlayerUrlWithConfig:self.config withToken:token withSignature:nil buildUrlcallBack:^(NSString * _Nullable url, NSError * _Nullable error) {
         [_txVodPlayer startVodPlay:url];
     }];
 }
