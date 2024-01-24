@@ -167,20 +167,18 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "B8BE5C0B-BC2B-40BB-A89B-DB31A0C1327F"
+            uuid = "37F113A1-2C1E-4028-89ED-514539EE6B46"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "iOSPlayerDemo/AVPlayerDemoController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "-setupPlayer"
-            landmarkType = "7">
+            startingLineNumber = "46"
+            endingLineNumber = "46">
             <Locations>
                <Location
-                  uuid = "B8BE5C0B-BC2B-40BB-A89B-DB31A0C1327F - 173a5d62dba90bd9"
+                  uuid = "37F113A1-2C1E-4028-89ED-514539EE6B46 - 173a5d62dba908f0"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -190,12 +188,12 @@
                   urlString = "file:///Users/garenwang/Documents/code/CIPlayerAssistor_iOS/iOSPlayerDemo/iOSPlayerDemo/AVPlayerDemoController.m"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "37"
-                  endingLineNumber = "37"
-                  offsetFromSymbolStart = "214">
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "956">
                </Location>
                <Location
-                  uuid = "B8BE5C0B-BC2B-40BB-A89B-DB31A0C1327F - d5b1335b0b3dc2cf"
+                  uuid = "37F113A1-2C1E-4028-89ED-514539EE6B46 - d5b1335b0b3dc1e6"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -205,8 +203,8 @@
                   urlString = "file:///Users/garenwang/Documents/code/CIPlayerAssistor_iOS/iOSPlayerDemo/iOSPlayerDemo/AVPlayerDemoController.m"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "37"
-                  endingLineNumber = "37"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
                   offsetFromSymbolStart = "81">
                </Location>
             </Locations>

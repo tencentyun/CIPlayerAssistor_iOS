@@ -27,12 +27,12 @@ CIPlayerAssistor iOS SDK 以及 Demo 项目，请参见 [CIPlayerAssistor_iOS](h
 CIMediaConfig * config = [[CIMediaConfig alloc]initWithFileUrl:@"http://test/test.m3u8"
                                              m3u8Type:CIM3u8TypePrivate];
 
+// CIMediaConfig 类在实例化时 自动生成了公钥 config.publicKey，可用于请求token;  
+NSString * token; // 从业务服务请求hls token。
+NSString * signature; // 若m3u8文件为私有读，则还需由业务服务返回用于鉴权的签名。
+
 // 使用CIPlayerAssistor 请求token并构建用于播放的m3u8文件链接。
-[[CIPlayerAssistor singleAssistor] buildPlayerUrlWithConfig:self.config getTokenBlock:^(CIMediaConfig * _Nullable config, CIPlayerAssistorGetTokenCallBack  _Nonnull callBack) {
-    // 此处用config 在业务服务构建token并使用callBack回调给SDK; 具体可以参考下方服务端配置实例
-    NSString * token = @"";//从业务后台请求token信息。
-    callBack(token);    
-} buildUrlcallBack:^(NSString * _Nullable url, NSError * _Nullable error) {
+[[CIPlayerAssistor singleAssistor] buildPlayerUrlWithConfig:self.config withToken:token withSignature:signature buildUrlcallBack:^(NSString * _Nullable url, NSError * _Nullable error) {
     // 构建播放链接回调，若构建失败则返回视频源链接。
     // url：用于播放的视频文件链接，可直接用播放器进行加载
     AVPlayerItem *item = [[AVPlayerItem alloc] initWithURL:[NSURL URLWithString:url]];
@@ -42,22 +42,5 @@ CIMediaConfig * config = [[CIMediaConfig alloc]initWithFileUrl:@"http://test/tes
     [self.view.layer addSublayer:self.playerLayer];
     [self.myPlayer play];
 }];
-```
-#### TXVodPlayer
 
-对于 TXVodPlayer 的集成以及配置，这里不再赘述，请参考 TXVodPlayer 相关文档。 
-
-```
-
-// 构建 CIMediaConfig 配置对象，同AVPlayer。
-CIMediaConfig * config = [[CIMediaConfig alloc]initWithFileUrl:InputConfig.fileUrl
-                                             m3u8Type:self.isPrivate];
-
-[[CIPlayerAssistor singleAssistor] buildPlayerUrlWithConfig:self.config getTokenBlock:^(CIMediaConfig * _Nullable config, CIPlayerAssistorGetTokenCallBack  _Nonnull callBack) {
-    // 此处用config 在业务服务构建token并使用callBack回调给SDK; 具体可以参考下方服务端配置实例
-    NSString * token = @"";//从业务后台请求token信息。
-    callBack(token);
-} buildUrlcallBack:^(NSString * _Nullable url, NSError * _Nullable error) {
-    [_txVodPlayer startVodPlay:url];
-}];
 ```
