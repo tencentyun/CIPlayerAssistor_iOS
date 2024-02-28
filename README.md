@@ -43,6 +43,7 @@ NSString * signature; // 若m3u8文件为私有读，则还需由业务服务返
 [[CIPlayerAssistor singleAssistor] buildPlayerUrlWithConfig:self.config withToken:token withSignature:signature buildUrlcallBack:^(NSString * _Nullable url, NSError * _Nullable error) {
     // 构建播放链接回调，若构建失败则返回视频源链接。
     // url：用于播放的视频文件链接，可直接用播放器进行加载
+    // 以下代码可根据业务实际需求修改。
     AVPlayerItem *item = [[AVPlayerItem alloc] initWithURL:[NSURL URLWithString:url]];
     self.myPlayer = [AVPlayer playerWithPlayerItem:item];
     self.playerLayer = [AVPlayerLayer playerLayerWithPlayer:self.myPlayer];
