@@ -13,10 +13,11 @@ typedef void (^CIPlayerAssistorCallBack)(NSString * _Nullable  url,NSError * _Nu
 
 @interface CIPlayerAssistor : NSObject
 
+
 +(instancetype)singleAssistor;
 
--(void)setPort:(NSInteger)port;
-
+/// 指定端口
++(instancetype)singleAssistorWithPort:(NSInteger)port;
 
 /// 获取token，适用于共有读文件
 /// - Parameters:
