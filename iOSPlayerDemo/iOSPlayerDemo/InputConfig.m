@@ -15,7 +15,7 @@
     return @"文件全路径";
 }
 + (NSString *)fileUrl{
-    return   @"文件url";
+    return   @"https://ci-h5-bj-1258125638.cos.ap-beijing.myqcloud.com/hls/BigBuckBunny.m3u8";
 }
 
 + (NSString *)playSkey{

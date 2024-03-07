@@ -22,14 +22,14 @@
 
 - (IBAction)avPlayer:(UIButton *)sender {
     AVPlayerDemoController * avPlayer = [AVPlayerDemoController new];
-    avPlayer.isPrivate = sender.tag;
-    avPlayer.title = sender.tag == 1 ? @"私有加密" : @"标准加密";
+    avPlayer.isPrivate = 1;
+    avPlayer.title = @"私有加密";
     [self.navigationController pushViewController:avPlayer animated:YES];
 }
 - (IBAction)txPlayer:(UIButton *)sender {
     TXPlayerDemoController * avPlayer = [TXPlayerDemoController new];
-    avPlayer.isPrivate = sender.tag;
-    avPlayer.title = sender.tag == 1 ? @"私有加密" : @"标准加密";
+    avPlayer.isPrivate =1;
+    avPlayer.title = @"私有加密";
     [self.navigationController pushViewController:avPlayer animated:YES];
 }
 

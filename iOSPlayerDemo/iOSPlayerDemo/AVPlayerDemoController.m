@@ -28,17 +28,20 @@
 
 -(void)setupPlayer{
   
-    self.config = [[CIMediaConfig alloc]initWithFileUrl:InputConfig.fileUrl
-                                                 m3u8Type:self.isPrivate];
+    self.config = [[CIMediaConfig alloc]initWithFileUrl:InputConfig.fileUrl];
     NSString * token = [[[TokenBuilder alloc]initWithType:self.isPrivate withPublicKey:self.config.publicKey] buildToken];
     
-    [[CIPlayerAssistor singleAssistor] buildPlayerUrlWithConfig:self.config withToken:token withSignature:nil buildUrlcallBack:^(NSString * _Nullable url, NSError * _Nullable error) {
-        AVPlayerItem *item = [[AVPlayerItem alloc] initWithURL:[NSURL URLWithString:url]];
-        self.myPlayer = [AVPlayer playerWithPlayerItem:item];
-        self.playerLayer = [AVPlayerLayer playerLayerWithPlayer:self.myPlayer];
-        self.playerLayer.frame = CGRectMake(0, 100, self.view.bounds.size.width, 300);
-        [self.view.layer addSublayer:self.playerLayer];
-        [self.myPlayer play];
+    [TokenBuilder getToken:self.config.publicKey fileURL:self.config.fileUrl protectContentKey:self.isPrivate callBack:^(NSString * _Nonnull token, NSString * _Nonnull signature) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [[CIPlayerAssistor singleAssistor] buildPlayerUrlWithConfig:self.config withToken:token withSignature:signature buildUrlcallBack:^(NSString * _Nullable url, NSError * _Nullable error) {
+                AVPlayerItem *item = [[AVPlayerItem alloc] initWithURL:[NSURL URLWithString:url]];
+                self.myPlayer = [AVPlayer playerWithPlayerItem:item];
+                self.playerLayer = [AVPlayerLayer playerLayerWithPlayer:self.myPlayer];
+                self.playerLayer.frame = CGRectMake(0, 100, self.view.bounds.size.width, 300);
+                [self.view.layer addSublayer:self.playerLayer];
+                [self.myPlayer play];
+            }];
+        });
     }];
 }
 @end

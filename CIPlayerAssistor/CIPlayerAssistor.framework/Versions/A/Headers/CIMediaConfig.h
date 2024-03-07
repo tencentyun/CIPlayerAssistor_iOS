@@ -21,6 +21,8 @@ typedef enum : NSUInteger {
 /// 过期时间 默认7200
 @property (nonatomic,assign)NSInteger expires;
 
+-(instancetype)initWithFileUrl:(NSString *)fileUrl;
+
 -(instancetype)initWithFileUrl:(NSString *)fileUrl
                       m3u8Type:(CIM3u8Type)type;
 
