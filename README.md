@@ -8,17 +8,13 @@ CIPlayerAssistor iOS SDK 以及 Demo 项目，请参见 [CIPlayerAssistor_iOS](h
 #### 环境要求
 配置支持 HTTP 请求，需要在项目的 info.plist 文件中添加 `App Transport Security Settings->Allow Arbitrary Loads` 设置为 YES。
 
-#### 自动集成 CIPlayerAssistor SDK
-podfile 文件中新增：
+#### 使用 Pod 集成 CIPlayerAssistor SDK
+1. podfile 文件中新增：
 ```
 pod 'CIPlayerAssistor', :git => 'https://github.com/tencentyun/CIPlayerAssistor_iOS.git' :tag => '1.0.0'
 ```
 执行`pod install`即可。
 
-
-#### 手动集成 CIPlayerAssistor SDK
-
-1. 前往github下载 CIPlayerAssistor 插件，将CIPlayerAssistor/CIPlayerAssistor.framework拖入项目中。
 2. 导入头文件
 ```
 #import <CIPlayerAssistor/CIPlayerAssistor.h>
