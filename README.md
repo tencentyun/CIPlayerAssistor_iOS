@@ -36,16 +36,16 @@ NSString * token; // 从业务服务请求hls token。
 NSString * signature; // 若m3u8文件为私有读，则还需由业务服务返回用于鉴权的签名。
 
 // 使用CIPlayerAssistor 请求token并构建用于播放的m3u8文件链接。
-[[CIPlayerAssistor singleAssistor] buildPlayerUrlWithConfig:self.config withToken:token withSignature:signature buildUrlcallBack:^(NSString * _Nullable url, NSError * _Nullable error) {
+[[CIPlayerAssistor singleAssistor] buildPlayerUrlWithConfig:config withToken:token withSignature:signature buildUrlcallBack:^(NSString * _Nullable url, NSError * _Nullable error) {
     // 构建播放链接回调，若构建失败则返回视频源链接。
     // url：用于播放的视频文件链接，可直接用播放器进行加载
     // 以下代码可根据业务实际需求修改。
     AVPlayerItem *item = [[AVPlayerItem alloc] initWithURL:[NSURL URLWithString:url]];
-    self.myPlayer = [AVPlayer playerWithPlayerItem:item];
-    self.playerLayer = [AVPlayerLayer playerLayerWithPlayer:self.myPlayer];
-    self.playerLayer.frame = CGRectMake(0, 100, self.view.bounds.size.width, 300);
-    [self.view.layer addSublayer:self.playerLayer];
-    [self.myPlayer play];
+    AVPlayer *myPlayer = [AVPlayer playerWithPlayerItem:item];
+    AVPlayerLayer *playerLayer = [AVPlayerLayer playerLayerWithPlayer:myPlayer];
+    playerLayer.frame = CGRectMake(0, 100, self.view.bounds.size.width, 300);
+    [self.view.layer addSublayer:playerLayer];
+    [myPlayer play];
 }];
 
 ```
