@@ -1,0 +1,11 @@
+CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/GCDWebServer" "${PODS_ROOT}/../../CIPlayerAssistor" "${PODS_ROOT}/OpenSSL-Universal/Frameworks" "${PODS_ROOT}/TXLiteAVSDK_Player/TXLiteAVSDK_Player" "${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL-Universal" "${PODS_XCFRAMEWORKS_BUILD_DIR}/TXLiteAVSDK_Player"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/GCDWebServer/GCDWebServer.framework/Headers" ${PODS_ROOT}/TXLiteAVSDK_Player/TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/
+OTHER_LDFLAGS = $(inherited) -l"c++" -l"iconv" -l"resolv" -l"sqlite3" -l"stdc++" -l"z" -framework "AVFoundation" -framework "Accelerate" -framework "AudioToolbox" -framework "CFNetwork" -framework "CoreGraphics" -framework "CoreServices" -framework "CoreTelephony" -framework "GCDWebServer" -framework "MetalKit" -framework "MobileCoreServices" -framework "OpenSSL" -framework "ReplayKit" -framework "SystemConfiguration" -framework "TXFFmpeg" -framework "TXSoundTouch" -framework "VideoToolbox"
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods
+PODS_XCFRAMEWORKS_BUILD_DIR = $(PODS_CONFIGURATION_BUILD_DIR)/XCFrameworkIntermediates
+USE_RECURSIVE_SCRIPT_INPUTS_IN_SCRIPT_PHASES = YES

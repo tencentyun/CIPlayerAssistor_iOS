@@ -1,0 +1,33 @@
+PODS:
+  - CIPlayerAssistor (1.0.4):
+    - GCDWebServer
+    - OpenSSL-Universal
+  - GCDWebServer (3.5.4):
+    - GCDWebServer/Core (= 3.5.4)
+  - GCDWebServer/Core (3.5.4)
+  - OpenSSL-Universal (1.1.2200)
+  - TXLiteAVSDK_Player (11.6.15007)
+
+DEPENDENCIES:
+  - CIPlayerAssistor (from `../`)
+  - TXLiteAVSDK_Player
+
+SPEC REPOS:
+  trunk:
+    - GCDWebServer
+    - OpenSSL-Universal
+    - TXLiteAVSDK_Player
+
+EXTERNAL SOURCES:
+  CIPlayerAssistor:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CIPlayerAssistor: bab90f93c78484678d1478abb46ff5a111c9e0bb
+  GCDWebServer: 2c156a56c8226e2d5c0c3f208a3621ccffbe3ce4
+  OpenSSL-Universal: 6e1ae0555546e604dbc632a2b9a24a9c46c41ef6
+  TXLiteAVSDK_Player: b699a5b6abb53d1f906265b3b5ad8c1bf1b3e1fe
+
+PODFILE CHECKSUM: 1368591c17b7b95a0a0b6df3aca0ea48ea460404
+
+COCOAPODS: 1.15.2
