@@ -16,6 +16,8 @@ typedef void (^CIPlayerAssistorCallBack)(NSString * _Nullable  url,NSError * _Nu
 
 +(instancetype)singleAssistor;
 
+-(void)setDebug:(BOOL)isDebug;
+
 /// 指定端口
 +(instancetype)singleAssistorWithPort:(NSInteger)port;
 

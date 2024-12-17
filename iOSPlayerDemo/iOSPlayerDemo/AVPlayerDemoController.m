@@ -29,7 +29,7 @@
 -(void)setupPlayer{
     CIOpenSSLRSA * sslRsa = [CIOpenSSL generateRsa];
     
-    
+    [[CIPlayerAssistor singleAssistor] setDebug:NO];
     self.config = [[CIMediaConfig alloc]initWithFileUrl:InputConfig.fileUrl privateKey:sslRsa.privateKey];
     
     [TokenBuilder getToken:sslRsa.publicKey fileURL:self.config.fileUrl protectContentKey:self.isPrivate callBack:^(NSString * _Nonnull token, NSString * _Nonnull signature) {
