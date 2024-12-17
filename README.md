@@ -32,6 +32,7 @@ pod 'CIPlayerAssistor', :git => 'https://github.com/tencentyun/CIPlayerAssistor_
 CIMediaConfig * config = [[CIMediaConfig alloc]initWithFileUrl:@"http://test/test.m3u8"
                                              m3u8Type:CIM3u8TypePrivate];
 
+[[CIPlayerAssistor singleAssistor] setDebug:NO];// 关闭日志打印
 // CIMediaConfig 类在实例化时 自动生成了公钥 config.publicKey，可用于请求token;  
 NSString * token; // 从业务服务请求hls token。
 NSString * signature; // 若m3u8文件为私有读，则还需由业务服务返回用于鉴权的签名。
