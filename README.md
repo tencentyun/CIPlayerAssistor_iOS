@@ -11,7 +11,7 @@ CIPlayerAssistor iOS SDK 以及 Demo 项目，请参见 [CIPlayerAssistor_iOS](h
 #### 使用 Pod 集成 CIPlayerAssistor SDK
 1. podfile 文件中新增：
 ```
-pod 'CIPlayerAssistor', :git => 'https://github.com/tencentyun/CIPlayerAssistor_iOS.git' :tag => '1.0.5'
+pod 'CIPlayerAssistor'
 ```
 执行`pod install`即可。
 
