@@ -74,3 +74,10 @@ NSString * signature; // 若m3u8文件为私有读，则还需由业务服务返
     [self.myPlayer play];
 }];
 ```
+
+### 更新日志
+* #### Version 1.0.5
+    支持关闭打印log
+    
+* #### Version 1.0.4
+    初始化仓库
