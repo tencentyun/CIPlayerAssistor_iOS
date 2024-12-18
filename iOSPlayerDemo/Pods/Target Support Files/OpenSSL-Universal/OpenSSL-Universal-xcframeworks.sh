@@ -29,6 +29,24 @@ variant_for_slice()
   "OpenSSL.xcframework/macos-arm64_x86_64")
     echo ""
     ;;
+  "OpenSSL.xcframework/tvos-arm64")
+    echo ""
+    ;;
+  "OpenSSL.xcframework/tvos-arm64_x86_64-simulator")
+    echo "simulator"
+    ;;
+  "OpenSSL.xcframework/watchos-arm64_arm64_32_armv7k")
+    echo ""
+    ;;
+  "OpenSSL.xcframework/watchos-arm64_x86_64-simulator")
+    echo "simulator"
+    ;;
+  "OpenSSL.xcframework/xros-arm64")
+    echo ""
+    ;;
+  "OpenSSL.xcframework/xros-arm64_x86_64-simulator")
+    echo "simulator"
+    ;;
   esac
 }
 
@@ -45,6 +63,24 @@ archs_for_slice()
     echo "arm64 x86_64"
     ;;
   "OpenSSL.xcframework/macos-arm64_x86_64")
+    echo "arm64 x86_64"
+    ;;
+  "OpenSSL.xcframework/tvos-arm64")
+    echo "arm64"
+    ;;
+  "OpenSSL.xcframework/tvos-arm64_x86_64-simulator")
+    echo "arm64 x86_64"
+    ;;
+  "OpenSSL.xcframework/watchos-arm64_arm64_32_armv7k")
+    echo "arm64 arm64_32 armv7k"
+    ;;
+  "OpenSSL.xcframework/watchos-arm64_x86_64-simulator")
+    echo "arm64 x86_64"
+    ;;
+  "OpenSSL.xcframework/xros-arm64")
+    echo "arm64"
+    ;;
+  "OpenSSL.xcframework/xros-arm64_x86_64-simulator")
     echo "arm64 x86_64"
     ;;
   esac
@@ -129,5 +165,5 @@ install_xcframework() {
   echo "Copied $source to $destination"
 }
 
-install_xcframework "${PODS_ROOT}/OpenSSL-Universal/Frameworks/OpenSSL.xcframework" "OpenSSL-Universal" "framework" "ios-arm64" "ios-arm64_x86_64-maccatalyst" "ios-arm64_x86_64-simulator"
+install_xcframework "${PODS_ROOT}/OpenSSL-Universal/OpenSSL.xcframework" "OpenSSL-Universal" "framework" "ios-arm64" "ios-arm64_x86_64-maccatalyst" "ios-arm64_x86_64-simulator"
 

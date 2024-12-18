@@ -13,8 +13,8 @@
 			buildPhases = (
 			);
 			dependencies = (
-				EBF9A32CCAD630A999D23EE346F802B4 /* PBXTargetDependency */,
-				62D46A33F40535A0173EF6EEDED5E482 /* PBXTargetDependency */,
+				474E4778D1A52E0A16B5B17F9FF22991 /* PBXTargetDependency */,
+				8518420770FF9F89AAE761BF6DF8FDBD /* PBXTargetDependency */,
 			);
 			name = CIPlayerAssistor;
 		};
@@ -30,9 +30,9 @@
 		};
 		B9ED5194E665042005069EF06C82A050 /* OpenSSL-Universal */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 9C286A3991F4C6A41E3DC321E660C1F8 /* Build configuration list for PBXAggregateTarget "OpenSSL-Universal" */;
+			buildConfigurationList = 9DB6FFD13D39DB8BBAE1FF0460962CB8 /* Build configuration list for PBXAggregateTarget "OpenSSL-Universal" */;
 			buildPhases = (
-				55D23F1975C93E19A7FC8568B4E07BD0 /* [CP] Copy XCFrameworks */,
+				103E8F363DE209FDB22056092284ECBA /* [CP] Copy XCFrameworks */,
 			);
 			dependencies = (
 			);
@@ -42,255 +42,253 @@
 
 /* Begin PBXBuildFile section */
 		04C6FB4F263B5C37C9FD812396B94563 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD210561E5EB6E0EF29007A69CB494B /* Foundation.framework */; };
-		07ADCD5E21A726C4B2AF21A09BD265F8 /* GCDWebServer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 335D4746E68A0E71467BF688DA8DCF3C /* GCDWebServer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		105678FB543D08B8C0969F95E0CD930D /* GCDWebServerURLEncodedFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ECA71658178F881DFFE41E9C3E66E5B /* GCDWebServerURLEncodedFormRequest.m */; };
-		115683DA0CF19DAF37E6591F0C0CD7A5 /* GCDWebServerStreamedResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB299E45FE90D64E13F046E1E6C1968 /* GCDWebServerStreamedResponse.m */; };
-		165AEE862F4AD7599AF379EA354FC56C /* GCDWebServerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D826B0C01D6C39834466DA6D17547B71 /* GCDWebServerResponse.m */; };
+		06B4705626C0CABDCBDD2FBBE1DD117D /* GCDWebServerMultiPartFormRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = C9DBAD00E0761207976EDBCE9460AA7A /* GCDWebServerMultiPartFormRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		07B7CC8E993835E33F3644EF14EBBA22 /* GCDWebServerURLEncodedFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 661C9A6409154169E18637379E349B95 /* GCDWebServerURLEncodedFormRequest.m */; };
+		14775631790E433BA9A3DABBE14A4FC3 /* GCDWebServerPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CE4F384E7B0E8B501EBEF5E2C2A4457 /* GCDWebServerPrivate.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		25C6E37F301F10AB24E864FF40DB249F /* GCDWebServerStreamedResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = DE6C2D1BB78B50C42E6279A21042A761 /* GCDWebServerStreamedResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27855C2C780C55CCAF1175496FA92344 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B6C337B2521A9490D4D3EE3BD254BF6 /* CFNetwork.framework */; };
 		28BD41F62F1D392F4D1AC912CBF8C4C1 /* Pods-iOSPlayerDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 54537BE3873072ABCDDF6A54AF4DB315 /* Pods-iOSPlayerDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2BB922ED8FE44E0D41E9BD916CC78CF8 /* GCDWebServerConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B4EF43A3887AE2BE4C0140AF42A3DDD /* GCDWebServerConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2BF3454F9E8C8AA5D178E13942AAA0F9 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B6C337B2521A9490D4D3EE3BD254BF6 /* CFNetwork.framework */; };
-		31D1078515CC49E04B301CEA88F4CFA4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD210561E5EB6E0EF29007A69CB494B /* Foundation.framework */; };
-		3D89A2E8663DE9120702A8255252E290 /* GCDWebServer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AB1190AB18393A6D0F4D2BC45ED24F /* GCDWebServer-dummy.m */; };
-		3EEE112FEA7BF3E5C7B542762A107AA3 /* GCDWebServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AED6946C76F2A6F7054EB6CD9542B7 /* GCDWebServer.m */; };
+		296AC92DE4729C0F7D23EC715C30B3C4 /* GCDWebServerFileRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = AAC037A9A348B777E858A8DD993F4588 /* GCDWebServerFileRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FF8A69D72ECEAA4A628905F67B070D4 /* GCDWebServerResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 68AB2325C0ADC4F65A674F2240C20B9B /* GCDWebServerResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3095ECE333752F9773F7DF4F933C7D02 /* GCDWebServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 51B3849869665BAA44820C86DC2E8946 /* GCDWebServerRequest.m */; };
+		3139AA0860B9B39C3C269834D02579CC /* GCDWebServer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 259F890C924843DFCF3C880382101FB5 /* GCDWebServer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3FD666380CF58C9F6CFA6BF5D9CE8E08 /* Pods-iOSPlayerDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE0342F5C3AAF2C19DA0CBB8148100F /* Pods-iOSPlayerDemo-dummy.m */; };
+		3FE4A76925393DC76C4C935F4EF597E4 /* GCDWebServerFileResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = AEF022BB513A41F900445013AE8A9669 /* GCDWebServerFileResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42AF9C2582AFC3FB46B6DBCC70FE4D2F /* GCDWebServerFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F2E1DCCDEA51610F468AED1346501B /* GCDWebServerFileResponse.m */; };
 		437E20B1A7CD4C17DD88EA0399D49357 /* Pods-iOSPlayerDemo-iOSPlayerDemoUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 77EC3369D21B8F035BC7FEC895D9E6F5 /* Pods-iOSPlayerDemo-iOSPlayerDemoUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		45384EEE89BBE955D4887AC44EE36FB7 /* Pods-iOSPlayerDemoTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F229B372486ED0C3F0B2BC7AB8618F4 /* Pods-iOSPlayerDemoTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		481E3060246A589DF637F0FFCA1E1C27 /* GCDWebServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CA6F5AC7D6BBF748E5B240842109907 /* GCDWebServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4F85F6032242AFC66DC28CCD22A06986 /* GCDWebServerFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = B286A4B11202FBCCCA7B1F84D95D948F /* GCDWebServerFunctions.m */; };
-		51287F03690A7F75E8154A2647484DB8 /* GCDWebServerResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 52FF7CAF42C9F0F9F021CC59DCF98CBD /* GCDWebServerResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		53E87FDDC64405254BB69254DB0797FF /* GCDWebServerPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 4730F779043D442D51335494D1EDB64D /* GCDWebServerPrivate.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		5DDFB58DD52163348FE432F152C24799 /* GCDWebServerHTTPStatusCodes.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E36E403CF4B6E5222DEA80C1AEAC429 /* GCDWebServerHTTPStatusCodes.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		646E32528B7FFEC63C5C0E773E4D99DE /* GCDWebServerRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DB931C7A654006858890C19E3CF3A86 /* GCDWebServerRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6DB657D25637CAFCA6947F289444C474 /* GCDWebServerMultiPartFormRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DF4CD6E468238D3CEE26DBBA9596D5B /* GCDWebServerMultiPartFormRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8242107BEA054C8EA27FD320010FB95E /* GCDWebServerFileRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = D76B03C4C3651B7390BECAFDFFCDD506 /* GCDWebServerFileRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A74B95896F6E56A8CDDF6DEE098288E /* GCDWebServerFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4750E95274F5766F51BC12A66C5815C3 /* GCDWebServerFunctions.m */; };
+		56E7ED80DCDC46C3AE355998D81996A8 /* GCDWebServerFileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B7214A35EF0C54F9B48F3E461532097B /* GCDWebServerFileRequest.m */; };
+		6CABD3F9A3D96F136CEE7046CA09A5E3 /* GCDWebServerStreamedResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 28ABD0CDC8063D9F3CFE5543B92C3737 /* GCDWebServerStreamedResponse.m */; };
+		6DECA7CC0686F01B62B97E61D3E75161 /* GCDWebServerDataRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B6DDA872F5B3640FD0A1A0B4C9113C2 /* GCDWebServerDataRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		71DF9582E7D41BEF782CB74A31150668 /* GCDWebServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E51EDBDED53F9B04085D85DBE3E0529 /* GCDWebServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76315F6E61064C1DE0988195AF0CFDFE /* GCDWebServerMultiPartFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31009CD2B98EF7D23B928D5D41531D24 /* GCDWebServerMultiPartFormRequest.m */; };
+		7D6267D295728470DD65830D74CEA35B /* GCDWebServerRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = EFC99D9BC58E05CA321A61B07F9DE7C1 /* GCDWebServerRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		82B54D2B0B82ACA7990BCADD4F4F4D00 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD210561E5EB6E0EF29007A69CB494B /* Foundation.framework */; };
 		844B8FBA92DABEACCEF9EC8ABB612DFD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD210561E5EB6E0EF29007A69CB494B /* Foundation.framework */; };
 		86CA8D54B9E9259F44B6FD1F2E306A2B /* Pods-iOSPlayerDemoTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD104BDFC836A0B1AD9564E9DED90F9C /* Pods-iOSPlayerDemoTests-dummy.m */; };
-		93364DBF504FF87A9672C9C9CA763625 /* GCDWebServerErrorResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = CA435D8F26DA6A261F26F9BD8FFFFA32 /* GCDWebServerErrorResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9BC1340078839E51BE3277B815016BD2 /* GCDWebServerMultiPartFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E506E324BE14E6317DD5A2477165AD2 /* GCDWebServerMultiPartFormRequest.m */; };
-		9D710C68782C8BC4CC14ED85E06BEF10 /* GCDWebServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4697E637D59D8A27644582CB4AD2EA3F /* GCDWebServerConnection.m */; };
-		9DAB6C6704D0373B2BF7A61CB481DE83 /* GCDWebServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 402048FB952B3454755D5376EB68DA20 /* GCDWebServerRequest.m */; };
-		A3E60021E7F811F56C5DE67E7F92A05C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA1C1073651CD11E5EAFB9310ADE83E /* MobileCoreServices.framework */; };
+		8C941771DA75F6FBE03D7A71F1F55F9D /* GCDWebServerDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA5682D6C1C0034E73403C218B55190 /* GCDWebServerDataRequest.m */; };
+		94D2F8665F5329FE079B5DB642988B2D /* GCDWebServer.m in Sources */ = {isa = PBXBuildFile; fileRef = CD890CF0F344AAE078E27CF0A948B268 /* GCDWebServer.m */; };
+		94DCCCE9E176F9DAA8BFB8F0D2AEF5D2 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA1C1073651CD11E5EAFB9310ADE83E /* MobileCoreServices.framework */; };
 		B1D11584661E48D278DBA0C4FE6FB16F /* Pods-iOSPlayerDemo-iOSPlayerDemoUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1B95D710C0D92B743CA10232008D55 /* Pods-iOSPlayerDemo-iOSPlayerDemoUITests-dummy.m */; };
-		BBE3409D476C67516A6F755740FF54A9 /* GCDWebServerFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5668B133596F068870BEBB728AED40 /* GCDWebServerFileResponse.m */; };
-		BC243CB0C33ABB0AECEF3F70170BA432 /* GCDWebServerStreamedResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 288B765858D0A42676921941B937DA92 /* GCDWebServerStreamedResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2604D60BC77B44FB79D1FB6EB683661 /* GCDWebServerFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D08DDCCB7ED61435036951029B2A121 /* GCDWebServerFunctions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D85879ED7115DB3F8DE22A91FA454711 /* GCDWebServerDataResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = F196CE4A6DE66106157E270C1CF87EFA /* GCDWebServerDataResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D8D2A3715B242975B7CFC03A4082AAE5 /* GCDWebServerErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = F68F9C8E839004B3FE05B23833F8514B /* GCDWebServerErrorResponse.m */; };
-		E5046E509BB260EE7B23AEE94F9746E1 /* GCDWebServerFileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EE19D7454B6F382011EE7AAC4DBE88A8 /* GCDWebServerFileRequest.m */; };
-		EE9859F0BA57D877377CECC03EB77BD5 /* GCDWebServerDataRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 0667F7B27D35CADB8F653E7426063C14 /* GCDWebServerDataRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F280D194659AA76C1D43F6637935845B /* GCDWebServerFileResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 61D8CD2150FBD22FEA2EF217CAD86DBA /* GCDWebServerFileResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F59901DABFD34877783A833546F14FD8 /* GCDWebServerDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A84BFCF1F51AA27FA487FB2A485EEA1 /* GCDWebServerDataResponse.m */; };
-		F9F9E698D4ED214DCCE718B93836069F /* GCDWebServerDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC4ADAB6E5623FB70435DB6455814BF /* GCDWebServerDataRequest.m */; };
-		FFF54686EA19D6EE13BD8CBFB4597514 /* GCDWebServerURLEncodedFormRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = A8C27A599D5584D692115B955801B9D2 /* GCDWebServerURLEncodedFormRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B24470D8B09241DA4AABBC9582861C5E /* GCDWebServerDataResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = EB7CC020EBE7BAD7CBE8ADC65D4B9E2E /* GCDWebServerDataResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B2F2BA08CBFE1418EB4704B9EA0873E6 /* GCDWebServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4072AB8F514AE6B99E73D38FA5F9B6E9 /* GCDWebServerConnection.m */; };
+		B9A50A29E7EE031736491348DC248707 /* GCDWebServerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F447C4FB37FC88384D18DBE42DFF79 /* GCDWebServerResponse.m */; };
+		BE323AD81E43E7AB6023F0809165BBFD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD210561E5EB6E0EF29007A69CB494B /* Foundation.framework */; };
+		C3BEAB99BD34788936B781FF195EB2C3 /* GCDWebServerFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = F369DC85C8BD8B8481F50EE7218AF82B /* GCDWebServerFunctions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C50A372C496296B7EA330DFC9F5B0508 /* GCDWebServerURLEncodedFormRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 3096B0BE6ABE04CF8FE0658D9336C576 /* GCDWebServerURLEncodedFormRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C6252EFA696526971E9D9B9DE1F02517 /* GCDWebServer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE440D445BBBA106A5EC6542B508876 /* GCDWebServer-dummy.m */; };
+		CF26E80CB6809176FCA153FDA797C354 /* GCDWebServerConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 71AC45D05950F61832CDE091716EAA1C /* GCDWebServerConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF81EB91EB16CBCEFAE496274021DC27 /* GCDWebServerHTTPStatusCodes.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F64915CCA7E822BFA88069B9EE73D7C /* GCDWebServerHTTPStatusCodes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E1FF56F5D5B4FD51BAB9799AC1C4BA50 /* GCDWebServerErrorResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = E2F5B4041D5C65890D3427750536B4F1 /* GCDWebServerErrorResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E40A0305C7E2A4090FE0C24B0E941A17 /* GCDWebServerErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B616FE53F540E0745CC785225A0A15 /* GCDWebServerErrorResponse.m */; };
+		EB529DA0E853FDF3BD53807E43830187 /* GCDWebServerDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 434B112DFDEC0C172D9DE297E710B77F /* GCDWebServerDataResponse.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		19BA755C21A22B78C58231BB4F5AF249 /* PBXContainerItemProxy */ = {
+		0DB4D46C7900372EF944EAB0BE306E84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D1E2F1C9164ADC7FD17977F3E0617BC;
+			remoteInfo = CIPlayerAssistor;
+		};
+		23D6D0DD1C722380E7EB8B73992DA46F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D1E2F1C9164ADC7FD17977F3E0617BC;
+			remoteInfo = CIPlayerAssistor;
+		};
+		2C524E2C8661AF8814351D7056D1B386 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = AD904F32069787EFB2DFFE05EB82F5BD;
 			remoteInfo = GCDWebServer;
 		};
-		1CC171154B90CF00E4E12B4C69E5D0EA /* PBXContainerItemProxy */ = {
+		402AE4B75A26D086D2DCFC4F29A69916 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74FAE5C6D0BD5C701414845F3CF13BDB;
+			remoteInfo = TXLiteAVSDK_Player;
+		};
+		4DA7FD688948BD5EE3F381BC70A1606B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74FAE5C6D0BD5C701414845F3CF13BDB;
+			remoteInfo = TXLiteAVSDK_Player;
+		};
+		6055D21CE6A9DE59210284D3E8C82B8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD904F32069787EFB2DFFE05EB82F5BD;
+			remoteInfo = GCDWebServer;
+		};
+		8904B6F772372B2DFD0857B23F6FCB69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9ED5194E665042005069EF06C82A050;
+			remoteInfo = "OpenSSL-Universal";
+		};
+		90450E49D19FE6A4A9B82C3E3EA5C937 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD904F32069787EFB2DFFE05EB82F5BD;
+			remoteInfo = GCDWebServer;
+		};
+		AD4C86BEDA2EBE639AAFD740232D8E24 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 75A69A23E969992BDD63FB02414A23FB;
 			remoteInfo = "Pods-iOSPlayerDemo";
 		};
-		36233C58F152729A1FC3738F3864202F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AD904F32069787EFB2DFFE05EB82F5BD;
-			remoteInfo = GCDWebServer;
-		};
-		6A6075A28437356DC44491C885E46DB5 /* PBXContainerItemProxy */ = {
+		B311137A25C972F59665128ABA4BB0B3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B9ED5194E665042005069EF06C82A050;
 			remoteInfo = "OpenSSL-Universal";
 		};
-		77FC6516427DCD9DAF8A7EC3582035ED /* PBXContainerItemProxy */ = {
+		FC5FB85FC440E61BDE0D0A14779F120B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B9ED5194E665042005069EF06C82A050;
 			remoteInfo = "OpenSSL-Universal";
-		};
-		84E274D853E6957EED5861DBE82E132D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AD904F32069787EFB2DFFE05EB82F5BD;
-			remoteInfo = GCDWebServer;
-		};
-		8E2ACEAE8DD4AD9B193365DB601D90CB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3D1E2F1C9164ADC7FD17977F3E0617BC;
-			remoteInfo = CIPlayerAssistor;
-		};
-		C4A0F2C7FA4B93C6672C3C3E3BE1915A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 74FAE5C6D0BD5C701414845F3CF13BDB;
-			remoteInfo = TXLiteAVSDK_Player;
-		};
-		D17F67C3B1E1B388D9B45BD7C2816B5E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B9ED5194E665042005069EF06C82A050;
-			remoteInfo = "OpenSSL-Universal";
-		};
-		DCBF726D170CDAE53F4D761EAD02021A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3D1E2F1C9164ADC7FD17977F3E0617BC;
-			remoteInfo = CIPlayerAssistor;
-		};
-		E96C39E7FAF59E56C69FBD6994E6864E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 74FAE5C6D0BD5C701414845F3CF13BDB;
-			remoteInfo = TXLiteAVSDK_Player;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00999875C83BF1C0009E6153C9AD0CED /* V2TXLivePremier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = V2TXLivePremier.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/V2TXLivePremier.h"; sourceTree = "<group>"; };
+		021A788A3C116E91FA0A6732271F7941 /* CIPlayerAssistor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CIPlayerAssistor.debug.xcconfig; sourceTree = "<group>"; };
+		053BE163E20088BE475B5FD14DC72B50 /* TXLiveSDKTypeDef.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXLiveSDKTypeDef.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXLiveSDKTypeDef.h"; sourceTree = "<group>"; };
 		065E7C9D01948BB53A333EE9E903A442 /* Pods-iOSPlayerDemoTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-iOSPlayerDemoTests.modulemap"; sourceTree = "<group>"; };
-		0667F7B27D35CADB8F653E7426063C14 /* GCDWebServerDataRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerDataRequest.h; path = GCDWebServer/Requests/GCDWebServerDataRequest.h; sourceTree = "<group>"; };
-		0C017A668B1D0EB44BE718D8869B0CC3 /* TXLiteAVSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXLiteAVSDK.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXLiteAVSDK.h"; sourceTree = "<group>"; };
-		0DB931C7A654006858890C19E3CF3A86 /* GCDWebServerRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerRequest.h; path = GCDWebServer/Core/GCDWebServerRequest.h; sourceTree = "<group>"; };
 		0F229B372486ED0C3F0B2BC7AB8618F4 /* Pods-iOSPlayerDemoTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iOSPlayerDemoTests-umbrella.h"; sourceTree = "<group>"; };
+		11B83797150315F2B1A7F994C459043A /* GCDWebServer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GCDWebServer.debug.xcconfig; sourceTree = "<group>"; };
 		12DC9485586BA5F4E9F812993B13A596 /* Pods-iOSPlayerDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iOSPlayerDemo-acknowledgements.plist"; sourceTree = "<group>"; };
-		1A84BFCF1F51AA27FA487FB2A485EEA1 /* GCDWebServerDataResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerDataResponse.m; path = GCDWebServer/Responses/GCDWebServerDataResponse.m; sourceTree = "<group>"; };
-		1B539A736930186EB2B8F5CE43BBD5C6 /* CIPlayerAssistor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CIPlayerAssistor.debug.xcconfig; sourceTree = "<group>"; };
-		1BA10C8343AD05DE54FCC99EB14E04CE /* TXAudioEffectManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXAudioEffectManager.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXAudioEffectManager.h"; sourceTree = "<group>"; };
-		1BD47218BC5A254D792D3368C356FB37 /* V2TXLiveDef.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = V2TXLiveDef.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/V2TXLiveDef.h"; sourceTree = "<group>"; };
+		13EF91A2E8DB539C2338C3DB3FC7C60A /* TXVodDownloadDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXVodDownloadDataSource.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXVodDownloadDataSource.h"; sourceTree = "<group>"; };
+		1BE49A047C478E3A642534884003E883 /* OpenSSL.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = OpenSSL.xcframework; sourceTree = "<group>"; };
+		1F64915CCA7E822BFA88069B9EE73D7C /* GCDWebServerHTTPStatusCodes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerHTTPStatusCodes.h; path = GCDWebServer/Core/GCDWebServerHTTPStatusCodes.h; sourceTree = "<group>"; };
 		1FF75B2EDBF7EB01EA7B628D0ACAC018 /* Pods-iOSPlayerDemoTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iOSPlayerDemoTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		1FFE3E387C62A6F99E78F7AE65AEB34D /* V2TXLivePlayerObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = V2TXLivePlayerObserver.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/V2TXLivePlayerObserver.h"; sourceTree = "<group>"; };
-		20311A521DB79FD33ADEAAE945A41013 /* TXAudioCustomProcessDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXAudioCustomProcessDelegate.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXAudioCustomProcessDelegate.h"; sourceTree = "<group>"; };
-		25B3F7C8DE2CB0F2C169F239E7CBD8AC /* TXLiveSDKTypeDef.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXLiveSDKTypeDef.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXLiveSDKTypeDef.h"; sourceTree = "<group>"; };
+		21AE87044B1604FC9A5A53B4E2EA2E9E /* TXVodDownloadManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXVodDownloadManager.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXVodDownloadManager.h"; sourceTree = "<group>"; };
+		259F890C924843DFCF3C880382101FB5 /* GCDWebServer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GCDWebServer-umbrella.h"; sourceTree = "<group>"; };
 		287E25B59B101C31A1F1F6B25CB517A2 /* Pods-iOSPlayerDemo-iOSPlayerDemoUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iOSPlayerDemo-iOSPlayerDemoUITests-Info.plist"; sourceTree = "<group>"; };
-		288B765858D0A42676921941B937DA92 /* GCDWebServerStreamedResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerStreamedResponse.h; path = GCDWebServer/Responses/GCDWebServerStreamedResponse.h; sourceTree = "<group>"; };
-		2946F4906FC22EFAF597867D91C6715C /* TXVodSDKEventDef.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXVodSDKEventDef.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXVodSDKEventDef.h"; sourceTree = "<group>"; };
+		28ABD0CDC8063D9F3CFE5543B92C3737 /* GCDWebServerStreamedResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerStreamedResponse.m; path = GCDWebServer/Responses/GCDWebServerStreamedResponse.m; sourceTree = "<group>"; };
 		297FC366E6CB52684DE6B6749B26A96E /* Pods-iOSPlayerDemo */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-iOSPlayerDemo"; path = Pods_iOSPlayerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2AC4ADAB6E5623FB70435DB6455814BF /* GCDWebServerDataRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerDataRequest.m; path = GCDWebServer/Requests/GCDWebServerDataRequest.m; sourceTree = "<group>"; };
-		2D6CFBBEE63D2744E045CAFF44A99A6F /* GCDWebServer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GCDWebServer-prefix.pch"; sourceTree = "<group>"; };
-		2FFBED9FAA2BBB1C11BC9B302A22154E /* TXLiteAVSymbolExport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXLiteAVSymbolExport.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXLiteAVSymbolExport.h"; sourceTree = "<group>"; };
-		335D4746E68A0E71467BF688DA8DCF3C /* GCDWebServer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GCDWebServer-umbrella.h"; sourceTree = "<group>"; };
+		2BB0394300D78242023E878D1FA21493 /* OpenSSL-Universal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "OpenSSL-Universal.release.xcconfig"; sourceTree = "<group>"; };
+		2CA5682D6C1C0034E73403C218B55190 /* GCDWebServerDataRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerDataRequest.m; path = GCDWebServer/Requests/GCDWebServerDataRequest.m; sourceTree = "<group>"; };
+		2F8ED809F3E7724B31BBF60567940A74 /* TXLivePlayListener.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXLivePlayListener.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXLivePlayListener.h"; sourceTree = "<group>"; };
+		308B6C1B172086B2818B0E02BADFEE20 /* TXLiveRecordTypeDef.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXLiveRecordTypeDef.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXLiveRecordTypeDef.h"; sourceTree = "<group>"; };
+		3096B0BE6ABE04CF8FE0658D9336C576 /* GCDWebServerURLEncodedFormRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerURLEncodedFormRequest.h; path = GCDWebServer/Requests/GCDWebServerURLEncodedFormRequest.h; sourceTree = "<group>"; };
+		31009CD2B98EF7D23B928D5D41531D24 /* GCDWebServerMultiPartFormRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerMultiPartFormRequest.m; path = GCDWebServer/Requests/GCDWebServerMultiPartFormRequest.m; sourceTree = "<group>"; };
+		339879D769CF08ACF7E7C958F16DEA52 /* V2TXLiveProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = V2TXLiveProperty.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/V2TXLiveProperty.h"; sourceTree = "<group>"; };
+		37045912B794FB1CF8FB769524367213 /* TXLiveRecordListener.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXLiveRecordListener.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXLiveRecordListener.h"; sourceTree = "<group>"; };
+		378735B1B412D24BB82F122F4212AE9C /* TXLivePlayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXLivePlayer.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXLivePlayer.h"; sourceTree = "<group>"; };
+		398798B2B4C3238720BA0A6B1FA19AF8 /* TXVodPlayListener.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXVodPlayListener.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXVodPlayListener.h"; sourceTree = "<group>"; };
 		3F1B95D710C0D92B743CA10232008D55 /* Pods-iOSPlayerDemo-iOSPlayerDemoUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iOSPlayerDemo-iOSPlayerDemoUITests-dummy.m"; sourceTree = "<group>"; };
-		402048FB952B3454755D5376EB68DA20 /* GCDWebServerRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerRequest.m; path = GCDWebServer/Core/GCDWebServerRequest.m; sourceTree = "<group>"; };
+		4072AB8F514AE6B99E73D38FA5F9B6E9 /* GCDWebServerConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerConnection.m; path = GCDWebServer/Core/GCDWebServerConnection.m; sourceTree = "<group>"; };
+		42A265F715C497AE4BC707CD33C97494 /* V2TXLivePremier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = V2TXLivePremier.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/V2TXLivePremier.h"; sourceTree = "<group>"; };
 		42B175E0458EA4288F6D8F060D32ADF5 /* Pods-iOSPlayerDemoTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iOSPlayerDemoTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		4697E637D59D8A27644582CB4AD2EA3F /* GCDWebServerConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerConnection.m; path = GCDWebServer/Core/GCDWebServerConnection.m; sourceTree = "<group>"; };
-		4730F779043D442D51335494D1EDB64D /* GCDWebServerPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerPrivate.h; path = GCDWebServer/Core/GCDWebServerPrivate.h; sourceTree = "<group>"; };
-		4B681A37178BC7532DBD2872CFE0C467 /* TXLivePlayListener.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXLivePlayListener.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXLivePlayListener.h"; sourceTree = "<group>"; };
-		51A0138C735FEBCB27F30888AEEF47E7 /* TXVodPlayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXVodPlayer.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXVodPlayer.h"; sourceTree = "<group>"; };
-		52FF7CAF42C9F0F9F021CC59DCF98CBD /* GCDWebServerResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerResponse.h; path = GCDWebServer/Core/GCDWebServerResponse.h; sourceTree = "<group>"; };
+		434B112DFDEC0C172D9DE297E710B77F /* GCDWebServerDataResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerDataResponse.m; path = GCDWebServer/Responses/GCDWebServerDataResponse.m; sourceTree = "<group>"; };
+		453AEF2FB3208C0A5EBA24262A9F43FA /* GCDWebServer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GCDWebServer.release.xcconfig; sourceTree = "<group>"; };
+		460052EAEA276FB9C49678273CBF9AD9 /* TXLiveBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXLiveBase.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXLiveBase.h"; sourceTree = "<group>"; };
+		4750E95274F5766F51BC12A66C5815C3 /* GCDWebServerFunctions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerFunctions.m; path = GCDWebServer/Core/GCDWebServerFunctions.m; sourceTree = "<group>"; };
+		51B3849869665BAA44820C86DC2E8946 /* GCDWebServerRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerRequest.m; path = GCDWebServer/Core/GCDWebServerRequest.m; sourceTree = "<group>"; };
+		53BC088812C26B642B169318A3962A67 /* TXVodPreloadManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXVodPreloadManager.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXVodPreloadManager.h"; sourceTree = "<group>"; };
 		54537BE3873072ABCDDF6A54AF4DB315 /* Pods-iOSPlayerDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iOSPlayerDemo-umbrella.h"; sourceTree = "<group>"; };
 		5572B687FE0A03C7C081163B801FF6FB /* Pods-iOSPlayerDemoTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iOSPlayerDemoTests-Info.plist"; sourceTree = "<group>"; };
-		5648BDA00DF906457BC60D5C5E7560FA /* TXVodPlayListener.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXVodPlayListener.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXVodPlayListener.h"; sourceTree = "<group>"; };
-		566B03110DE7DDE8A82270CB890C58CA /* OpenSSL-Universal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "OpenSSL-Universal.debug.xcconfig"; sourceTree = "<group>"; };
-		56EAF9D642A60F549889493715C73BFA /* ITRTCAudioPacketListener.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ITRTCAudioPacketListener.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/ITRTCAudioPacketListener.h"; sourceTree = "<group>"; };
+		56AF6B7479658C71AC15F5983BD4BB13 /* TXLiteAVSDK_Player-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "TXLiteAVSDK_Player-xcframeworks.sh"; sourceTree = "<group>"; };
 		5AF7D368639A19230DEF089F022BDC30 /* Pods-iOSPlayerDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOSPlayerDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
-		5B5DD1604BEC7B9AAFC8F4ADDCC62123 /* OpenSSL-Universal-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "OpenSSL-Universal-xcframeworks.sh"; sourceTree = "<group>"; };
-		5CD4F99078220A300F6D5EE2972B2C6C /* TXLiteAVSDK_Player-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "TXLiteAVSDK_Player-xcframeworks.sh"; sourceTree = "<group>"; };
+		5C1A1451290A15F7AF653E44C7A97FD0 /* V2TXLiveCode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = V2TXLiveCode.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/V2TXLiveCode.h"; sourceTree = "<group>"; };
 		5CE0342F5C3AAF2C19DA0CBB8148100F /* Pods-iOSPlayerDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iOSPlayerDemo-dummy.m"; sourceTree = "<group>"; };
-		61D8CD2150FBD22FEA2EF217CAD86DBA /* GCDWebServerFileResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerFileResponse.h; path = GCDWebServer/Responses/GCDWebServerFileResponse.h; sourceTree = "<group>"; };
+		5F72AAF992338A34DA2757C67B922F07 /* TXDeviceManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXDeviceManager.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXDeviceManager.h"; sourceTree = "<group>"; };
+		62399DD460BC676205640909EE99C798 /* CIPlayerAssistor.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CIPlayerAssistor.framework; path = CIPlayerAssistor/CIPlayerAssistor.framework; sourceTree = "<group>"; };
 		6255AC01287F31BB6291E2B307F49A02 /* Pods-iOSPlayerDemo-iOSPlayerDemoUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-iOSPlayerDemo-iOSPlayerDemoUITests"; path = Pods_iOSPlayerDemo_iOSPlayerDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		69A4C51F8455B4AA6875112F0CD1D7D3 /* TXSoundTouch.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = TXSoundTouch.xcframework; path = TXLiteAVSDK_Player/TXSoundTouch.xcframework; sourceTree = "<group>"; };
-		69C13954FA4DFBE7EBE5680300C89A12 /* TXVodDownloadManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXVodDownloadManager.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXVodDownloadManager.h"; sourceTree = "<group>"; };
+		6484FAF691748D29AA8AAD6879339F1A /* TXLiteAVSDK_Player.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = TXLiteAVSDK_Player.xcframework; path = TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework; sourceTree = "<group>"; };
+		657C4D901E818B8F3F66B0CDD15EA5C5 /* OpenSSL-Universal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "OpenSSL-Universal.debug.xcconfig"; sourceTree = "<group>"; };
+		661C9A6409154169E18637379E349B95 /* GCDWebServerURLEncodedFormRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerURLEncodedFormRequest.m; path = GCDWebServer/Requests/GCDWebServerURLEncodedFormRequest.m; sourceTree = "<group>"; };
+		68AB2325C0ADC4F65A674F2240C20B9B /* GCDWebServerResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerResponse.h; path = GCDWebServer/Core/GCDWebServerResponse.h; sourceTree = "<group>"; };
 		6A2076E54AF3FFEA85B4EA174605E62D /* Pods-iOSPlayerDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-iOSPlayerDemo.modulemap"; sourceTree = "<group>"; };
 		6B6C337B2521A9490D4D3EE3BD254BF6 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
-		6BC6F2521317EF5E88A25155A7C65164 /* TXTrackInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXTrackInfo.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXTrackInfo.h"; sourceTree = "<group>"; };
-		6E68813A8A697311AD881F0617A8DA01 /* TXLiveSDKEventDef.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXLiveSDKEventDef.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXLiveSDKEventDef.h"; sourceTree = "<group>"; };
+		6B6DDA872F5B3640FD0A1A0B4C9113C2 /* GCDWebServerDataRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerDataRequest.h; path = GCDWebServer/Requests/GCDWebServerDataRequest.h; sourceTree = "<group>"; };
+		6CF3C9B205A9D564C1488B5893377142 /* ITRTCAudioPacketListener.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ITRTCAudioPacketListener.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/ITRTCAudioPacketListener.h"; sourceTree = "<group>"; };
 		701775C6E1428F0797B3E4FD3AA2422A /* Pods-iOSPlayerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOSPlayerDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		7621C6D596DF875246C68A247DC8C60B /* CIPlayerAssistor.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CIPlayerAssistor.framework; path = CIPlayerAssistor/CIPlayerAssistor.framework; sourceTree = "<group>"; };
-		769BC58000BDE9FEAE6EC84A9F995947 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		71AC45D05950F61832CDE091716EAA1C /* GCDWebServerConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerConnection.h; path = GCDWebServer/Core/GCDWebServerConnection.h; sourceTree = "<group>"; };
 		77EC3369D21B8F035BC7FEC895D9E6F5 /* Pods-iOSPlayerDemo-iOSPlayerDemoUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iOSPlayerDemo-iOSPlayerDemoUITests-umbrella.h"; sourceTree = "<group>"; };
+		7860DBA7F603A6BD78CC9297578849F6 /* TXVodDownloadMediaInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXVodDownloadMediaInfo.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXVodDownloadMediaInfo.h"; sourceTree = "<group>"; };
+		7AA37064FFE02BD7E993B8E8B2088825 /* TXLiteAVSDK_Player.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TXLiteAVSDK_Player.release.xcconfig; sourceTree = "<group>"; };
 		7AD210561E5EB6E0EF29007A69CB494B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7CE39F50E117F4D131A56727BCB63AA1 /* TXVodPlayConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXVodPlayConfig.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXVodPlayConfig.h"; sourceTree = "<group>"; };
-		7D08DDCCB7ED61435036951029B2A121 /* GCDWebServerFunctions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerFunctions.h; path = GCDWebServer/Core/GCDWebServerFunctions.h; sourceTree = "<group>"; };
-		7DF4CD6E468238D3CEE26DBBA9596D5B /* GCDWebServerMultiPartFormRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerMultiPartFormRequest.h; path = GCDWebServer/Requests/GCDWebServerMultiPartFormRequest.h; sourceTree = "<group>"; };
-		7DFA6D1D429E47483B92F99E6DA4B709 /* OpenSSL.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = OpenSSL.xcframework; path = Frameworks/OpenSSL.xcframework; sourceTree = "<group>"; };
-		7E36E403CF4B6E5222DEA80C1AEAC429 /* GCDWebServerHTTPStatusCodes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerHTTPStatusCodes.h; path = GCDWebServer/Core/GCDWebServerHTTPStatusCodes.h; sourceTree = "<group>"; };
-		7E506E324BE14E6317DD5A2477165AD2 /* GCDWebServerMultiPartFormRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerMultiPartFormRequest.m; path = GCDWebServer/Requests/GCDWebServerMultiPartFormRequest.m; sourceTree = "<group>"; };
+		7AE6B97A439C2865B3C24E5AE71A4A6D /* GCDWebServer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GCDWebServer.modulemap; sourceTree = "<group>"; };
 		7FADB44D336E43E3A3DB6C391CE78129 /* Pods-iOSPlayerDemo-iOSPlayerDemoUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iOSPlayerDemo-iOSPlayerDemoUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8038EC5E9027DFDE5B403F771EC96FBD /* TXLiteAVSDK_Player.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TXLiteAVSDK_Player.debug.xcconfig; sourceTree = "<group>"; };
 		805B3F3133F9BB3D9E697B4BA91FE57D /* Pods-iOSPlayerDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOSPlayerDemoTests.release.xcconfig"; sourceTree = "<group>"; };
-		8067E38ECB9CC658E343F0566FACD035 /* TXBeautyManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXBeautyManager.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXBeautyManager.h"; sourceTree = "<group>"; };
-		840BC2EE8AC5419E0C7E3A73CE310443 /* TXFFmpeg.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = TXFFmpeg.xcframework; path = TXLiteAVSDK_Player/TXFFmpeg.xcframework; sourceTree = "<group>"; };
-		8453C4E19B2C8C37E23FE887FB13BFB6 /* TXLivePlayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXLivePlayer.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXLivePlayer.h"; sourceTree = "<group>"; };
-		84C436F5ED8EBEF102EC61949AFFBDF9 /* TXLiteAVBuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXLiteAVBuffer.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXLiteAVBuffer.h"; sourceTree = "<group>"; };
+		8472238884CFFFFE00BF9BC184D53617 /* TXPlayerSubtitleRenderModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXPlayerSubtitleRenderModel.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXPlayerSubtitleRenderModel.h"; sourceTree = "<group>"; };
+		85A61230FC91AD6E4556BF1FD0B16120 /* TXVodSDKEventDef.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXVodSDKEventDef.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXVodSDKEventDef.h"; sourceTree = "<group>"; };
 		85D839DF00D347BBC21743A506683A42 /* Pods-iOSPlayerDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iOSPlayerDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
 		8794B15176E9934247D093E18782F3B1 /* Pods-iOSPlayerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOSPlayerDemo.release.xcconfig"; sourceTree = "<group>"; };
-		89AED6946C76F2A6F7054EB6CD9542B7 /* GCDWebServer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServer.m; path = GCDWebServer/Core/GCDWebServer.m; sourceTree = "<group>"; };
-		8B4EF43A3887AE2BE4C0140AF42A3DDD /* GCDWebServerConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerConnection.h; path = GCDWebServer/Core/GCDWebServerConnection.h; sourceTree = "<group>"; };
-		8C673B320AE63A3F203EBA84AC1CA8D4 /* GCDWebServer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GCDWebServer.modulemap; sourceTree = "<group>"; };
+		8B0FC09E13EB985CAFEED36E6C3746AA /* TXImageSprite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXImageSprite.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXImageSprite.h"; sourceTree = "<group>"; };
 		8C7402F5B029C99B5CA3A615B5984419 /* Pods-iOSPlayerDemo-iOSPlayerDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOSPlayerDemo-iOSPlayerDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8CE4F384E7B0E8B501EBEF5E2C2A4457 /* GCDWebServerPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerPrivate.h; path = GCDWebServer/Core/GCDWebServerPrivate.h; sourceTree = "<group>"; };
 		8D0896BA053F95389D33516B50F995A4 /* Pods-iOSPlayerDemo-iOSPlayerDemoUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iOSPlayerDemo-iOSPlayerDemoUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		8D18E57A0A1BBA50CB3FE5C3AA6F3698 /* TXLiteAVSDK_Player.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TXLiteAVSDK_Player.release.xcconfig; sourceTree = "<group>"; };
-		8FF34DE46792C46D66F1699394D19300 /* TXLiveRecordTypeDef.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXLiveRecordTypeDef.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXLiveRecordTypeDef.h"; sourceTree = "<group>"; };
-		92CA049740CEAE2D47EF0E00E5742B9E /* TXLiteAVCode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXLiteAVCode.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXLiteAVCode.h"; sourceTree = "<group>"; };
-		94E6F9E4B095741398DC5F19BF454607 /* CIPlayerAssistor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CIPlayerAssistor.release.xcconfig; sourceTree = "<group>"; };
-		9CA6F5AC7D6BBF748E5B240842109907 /* GCDWebServer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServer.h; path = GCDWebServer/Core/GCDWebServer.h; sourceTree = "<group>"; };
+		8E51EDBDED53F9B04085D85DBE3E0529 /* GCDWebServer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServer.h; path = GCDWebServer/Core/GCDWebServer.h; sourceTree = "<group>"; };
+		90DC2ED0FDE9752BAFCEF1FAE51AF02E /* TXVodPlayConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXVodPlayConfig.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXVodPlayConfig.h"; sourceTree = "<group>"; };
+		917034EB66C75722884E4419D5517CE4 /* TXLiteAVSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXLiteAVSDK.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXLiteAVSDK.h"; sourceTree = "<group>"; };
+		98494C3CA1059BA289DA2DD289B5F8A3 /* TXVideoCustomProcessDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXVideoCustomProcessDelegate.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXVideoCustomProcessDelegate.h"; sourceTree = "<group>"; };
+		98DE0D39ABFC8C32868101973FF8AED5 /* TXLivePlayConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXLivePlayConfig.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXLivePlayConfig.h"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E1A1DAE95DAA6FFF15D47DEBA958F12 /* Pods-iOSPlayerDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iOSPlayerDemo-Info.plist"; sourceTree = "<group>"; };
-		9ECA71658178F881DFFE41E9C3E66E5B /* GCDWebServerURLEncodedFormRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerURLEncodedFormRequest.m; path = GCDWebServer/Requests/GCDWebServerURLEncodedFormRequest.m; sourceTree = "<group>"; };
-		A258BBDA08AE87DDE98FFA9DAB69105A /* V2TXLiveProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = V2TXLiveProperty.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/V2TXLiveProperty.h"; sourceTree = "<group>"; };
-		A7AB1190AB18393A6D0F4D2BC45ED24F /* GCDWebServer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GCDWebServer-dummy.m"; sourceTree = "<group>"; };
-		A8C27A599D5584D692115B955801B9D2 /* GCDWebServerURLEncodedFormRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerURLEncodedFormRequest.h; path = GCDWebServer/Requests/GCDWebServerURLEncodedFormRequest.h; sourceTree = "<group>"; };
-		AA9A6DD79FE76CC2B8B802452EF99801 /* TXVodDownloadDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXVodDownloadDataSource.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXVodDownloadDataSource.h"; sourceTree = "<group>"; };
-		AAB299E45FE90D64E13F046E1E6C1968 /* GCDWebServerStreamedResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerStreamedResponse.m; path = GCDWebServer/Responses/GCDWebServerStreamedResponse.m; sourceTree = "<group>"; };
-		AAFE25C6819B054E1279262E3C9EE1E7 /* TXPlayerDrmBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXPlayerDrmBuilder.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXPlayerDrmBuilder.h"; sourceTree = "<group>"; };
-		AC0539B30C10D1712F7AB216138E353A /* TXLiveAudioSessionDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXLiveAudioSessionDelegate.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXLiveAudioSessionDelegate.h"; sourceTree = "<group>"; };
-		AF7CC47CFBBA2DF45B0CB9859977EB5E /* OpenSSL-Universal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "OpenSSL-Universal.release.xcconfig"; sourceTree = "<group>"; };
-		B286A4B11202FBCCCA7B1F84D95D948F /* GCDWebServerFunctions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerFunctions.m; path = GCDWebServer/Core/GCDWebServerFunctions.m; sourceTree = "<group>"; };
-		B28F7E766CD643D0884010D47AB46CF8 /* TXPlayerSubtitleRenderModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXPlayerSubtitleRenderModel.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXPlayerSubtitleRenderModel.h"; sourceTree = "<group>"; };
-		B4BB6DF5C1946245195D7F391FC2DE8F /* TXPlayerGlobalSetting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXPlayerGlobalSetting.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXPlayerGlobalSetting.h"; sourceTree = "<group>"; };
+		A6B2866E8AE765A11477692F5E151875 /* TXLiteAVCode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXLiteAVCode.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXLiteAVCode.h"; sourceTree = "<group>"; };
+		A7B616FE53F540E0745CC785225A0A15 /* GCDWebServerErrorResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerErrorResponse.m; path = GCDWebServer/Responses/GCDWebServerErrorResponse.m; sourceTree = "<group>"; };
+		A90C3B8C3E7A2D33A247DD4329ABFCA1 /* TXLiteAVBuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXLiteAVBuffer.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXLiteAVBuffer.h"; sourceTree = "<group>"; };
+		AAC037A9A348B777E858A8DD993F4588 /* GCDWebServerFileRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerFileRequest.h; path = GCDWebServer/Requests/GCDWebServerFileRequest.h; sourceTree = "<group>"; };
+		AC60318870E1BFE97DC4047C589A982E /* OpenSSL-Universal-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "OpenSSL-Universal-xcframeworks.sh"; sourceTree = "<group>"; };
+		ADA8FFB357D7EB3BE0317CAF437A9EEB /* GCDWebServer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GCDWebServer-prefix.pch"; sourceTree = "<group>"; };
+		AEF022BB513A41F900445013AE8A9669 /* GCDWebServerFileResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerFileResponse.h; path = GCDWebServer/Responses/GCDWebServerFileResponse.h; sourceTree = "<group>"; };
+		B607F80EFCBFFF0C00703E545922E9B3 /* TXPlayerAuthParams.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXPlayerAuthParams.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXPlayerAuthParams.h"; sourceTree = "<group>"; };
 		B68C1052A3B51DBCF7D960F898AAFA95 /* GCDWebServer */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GCDWebServer; path = GCDWebServer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BB3113D3F288557D458DB5CEF0491B30 /* TXDeviceManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXDeviceManager.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXDeviceManager.h"; sourceTree = "<group>"; };
-		BC5668B133596F068870BEBB728AED40 /* GCDWebServerFileResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerFileResponse.m; path = GCDWebServer/Responses/GCDWebServerFileResponse.m; sourceTree = "<group>"; };
-		BC971E8E392C01F17AF7B6A593C244D4 /* TXBitrateItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXBitrateItem.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXBitrateItem.h"; sourceTree = "<group>"; };
-		BFFF77EE9B9F44F64877D17D10D07D31 /* TXVodDownloadMediaInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXVodDownloadMediaInfo.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXVodDownloadMediaInfo.h"; sourceTree = "<group>"; };
-		C06E2BBAD4FF8E0AFDFB7FE056481133 /* TXLiteAVSDK_Player.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = TXLiteAVSDK_Player.xcframework; path = TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework; sourceTree = "<group>"; };
-		C0CF2A86E84CC93B69BB9A4E698212C5 /* GCDWebServer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GCDWebServer-Info.plist"; sourceTree = "<group>"; };
-		C1BB6926B9AF66FB9A1CF5BC7B3D2AD8 /* V2TXLiveCode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = V2TXLiveCode.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/V2TXLiveCode.h"; sourceTree = "<group>"; };
-		C203F4FF13D6F6836A1E0C071E77BF49 /* TXVideoCustomProcessDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXVideoCustomProcessDelegate.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXVideoCustomProcessDelegate.h"; sourceTree = "<group>"; };
-		C275EFC064FA33144441160AE26DC4BF /* TXLiveBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXLiveBase.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXLiveBase.h"; sourceTree = "<group>"; };
-		C28ABB960332E8ADCFA96C89193DE4EF /* TXLivePlayConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXLivePlayConfig.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXLivePlayConfig.h"; sourceTree = "<group>"; };
+		B68C8035FA033C333DEE32DACEB1CB3F /* CIPlayerAssistor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CIPlayerAssistor.release.xcconfig; sourceTree = "<group>"; };
+		B7214A35EF0C54F9B48F3E461532097B /* GCDWebServerFileRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerFileRequest.m; path = GCDWebServer/Requests/GCDWebServerFileRequest.m; sourceTree = "<group>"; };
+		BD5459D40EC504A84A6C82D9FCB72A73 /* TXAudioCustomProcessDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXAudioCustomProcessDelegate.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXAudioCustomProcessDelegate.h"; sourceTree = "<group>"; };
+		BFE440D445BBBA106A5EC6542B508876 /* GCDWebServer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GCDWebServer-dummy.m"; sourceTree = "<group>"; };
 		C4C7C2ACF2DE0C829B300356FB6E7E14 /* Pods-iOSPlayerDemo-iOSPlayerDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOSPlayerDemo-iOSPlayerDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		CA435D8F26DA6A261F26F9BD8FFFFA32 /* GCDWebServerErrorResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerErrorResponse.h; path = GCDWebServer/Responses/GCDWebServerErrorResponse.h; sourceTree = "<group>"; };
+		C7AB75CE824AB1629B2BFEE44743057B /* TXSoundTouch.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = TXSoundTouch.xcframework; path = TXLiteAVSDK_Player/TXSoundTouch.xcframework; sourceTree = "<group>"; };
+		C9DBAD00E0761207976EDBCE9460AA7A /* GCDWebServerMultiPartFormRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerMultiPartFormRequest.h; path = GCDWebServer/Requests/GCDWebServerMultiPartFormRequest.h; sourceTree = "<group>"; };
+		CD890CF0F344AAE078E27CF0A948B268 /* GCDWebServer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServer.m; path = GCDWebServer/Core/GCDWebServer.m; sourceTree = "<group>"; };
+		CD9931221DA524380A7F88ABDA225F0D /* TXLiteAVSymbolExport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXLiteAVSymbolExport.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXLiteAVSymbolExport.h"; sourceTree = "<group>"; };
 		CEA1C1073651CD11E5EAFB9310ADE83E /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
-		CFA619FA02CD28AAD83DBFB93D30A2E1 /* TXLiveRecordListener.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXLiveRecordListener.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXLiveRecordListener.h"; sourceTree = "<group>"; };
+		CFA358A5384177B28B4FE1169D0DE74F /* TXPlayerDrmBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXPlayerDrmBuilder.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXPlayerDrmBuilder.h"; sourceTree = "<group>"; };
 		D3019E8F5BDCE36B959D91638EFBE978 /* Pods-iOSPlayerDemoTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-iOSPlayerDemoTests"; path = Pods_iOSPlayerDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D5931582190675F572197F776621A774 /* CIPlayerAssistor.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = CIPlayerAssistor.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		D5D3D5FF3C95D35EF6C5FAF71D5FEE8C /* TXVodPreloadManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXVodPreloadManager.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXVodPreloadManager.h"; sourceTree = "<group>"; };
-		D5F90926E1D09EBCDC93D11073813599 /* V2TXLivePlayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = V2TXLivePlayer.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/V2TXLivePlayer.h"; sourceTree = "<group>"; };
-		D6592C51FBB1F57897A0E1255A8ED7C7 /* TXAudioRawDataDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXAudioRawDataDelegate.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXAudioRawDataDelegate.h"; sourceTree = "<group>"; };
-		D76B03C4C3651B7390BECAFDFFCDD506 /* GCDWebServerFileRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerFileRequest.h; path = GCDWebServer/Requests/GCDWebServerFileRequest.h; sourceTree = "<group>"; };
-		D7AC87D37A32CD69C10929828BF0CE86 /* TXPlayerAuthParams.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXPlayerAuthParams.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXPlayerAuthParams.h"; sourceTree = "<group>"; };
-		D826B0C01D6C39834466DA6D17547B71 /* GCDWebServerResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerResponse.m; path = GCDWebServer/Core/GCDWebServerResponse.m; sourceTree = "<group>"; };
+		D5EB3B2787CB4B24B58D07742A250C94 /* TXVodPlayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXVodPlayer.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXVodPlayer.h"; sourceTree = "<group>"; };
+		D61E56EC67AF8E3F848DD1408C214B70 /* V2TXLivePlayerObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = V2TXLivePlayerObserver.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/V2TXLivePlayerObserver.h"; sourceTree = "<group>"; };
 		DD104BDFC836A0B1AD9564E9DED90F9C /* Pods-iOSPlayerDemoTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iOSPlayerDemoTests-dummy.m"; sourceTree = "<group>"; };
-		DD840FBE45CD3A44F1D47650CDA6D667 /* GCDWebServer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GCDWebServer.debug.xcconfig; sourceTree = "<group>"; };
-		DE622B90DE3C0DC8B11C941F95FA8F68 /* TXLiteAVSDK_Player.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TXLiteAVSDK_Player.debug.xcconfig; sourceTree = "<group>"; };
+		DDF76898620F946B96D2E76CE3ED9AF5 /* TXBeautyManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXBeautyManager.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXBeautyManager.h"; sourceTree = "<group>"; };
+		DE6C2D1BB78B50C42E6279A21042A761 /* GCDWebServerStreamedResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerStreamedResponse.h; path = GCDWebServer/Responses/GCDWebServerStreamedResponse.h; sourceTree = "<group>"; };
+		E032C9BF8455589C7C8DC0D60A181937 /* TXFFmpeg.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = TXFFmpeg.xcframework; path = TXLiteAVSDK_Player/TXFFmpeg.xcframework; sourceTree = "<group>"; };
+		E2F5B4041D5C65890D3427750536B4F1 /* GCDWebServerErrorResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerErrorResponse.h; path = GCDWebServer/Responses/GCDWebServerErrorResponse.h; sourceTree = "<group>"; };
 		E66D07FB16321702664E0B3A69909BB4 /* Pods-iOSPlayerDemo-iOSPlayerDemoUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-iOSPlayerDemo-iOSPlayerDemoUITests.modulemap"; sourceTree = "<group>"; };
-		EB548EB037E312A2793F3C6EDA571707 /* GCDWebServer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GCDWebServer.release.xcconfig; sourceTree = "<group>"; };
-		EE19D7454B6F382011EE7AAC4DBE88A8 /* GCDWebServerFileRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerFileRequest.m; path = GCDWebServer/Requests/GCDWebServerFileRequest.m; sourceTree = "<group>"; };
-		F0CFF1E9E15941EA7394982937C93588 /* TXImageSprite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXImageSprite.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXImageSprite.h"; sourceTree = "<group>"; };
-		F196CE4A6DE66106157E270C1CF87EFA /* GCDWebServerDataResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerDataResponse.h; path = GCDWebServer/Responses/GCDWebServerDataResponse.h; sourceTree = "<group>"; };
+		EB7CC020EBE7BAD7CBE8ADC65D4B9E2E /* GCDWebServerDataResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerDataResponse.h; path = GCDWebServer/Responses/GCDWebServerDataResponse.h; sourceTree = "<group>"; };
+		EDF4AC62EF8F7E2E5F092169A47CABB7 /* V2TXLivePlayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = V2TXLivePlayer.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/V2TXLivePlayer.h"; sourceTree = "<group>"; };
+		EEE7FC78EC809B3F68B0FFD60AB5A366 /* TXTrackInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXTrackInfo.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXTrackInfo.h"; sourceTree = "<group>"; };
+		EFC99D9BC58E05CA321A61B07F9DE7C1 /* GCDWebServerRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerRequest.h; path = GCDWebServer/Core/GCDWebServerRequest.h; sourceTree = "<group>"; };
 		F23A3DFF0C465FF04D9A736D91F95C28 /* Pods-iOSPlayerDemo-iOSPlayerDemoUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iOSPlayerDemo-iOSPlayerDemoUITests-frameworks.sh"; sourceTree = "<group>"; };
-		F68F9C8E839004B3FE05B23833F8514B /* GCDWebServerErrorResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerErrorResponse.m; path = GCDWebServer/Responses/GCDWebServerErrorResponse.m; sourceTree = "<group>"; };
+		F369DC85C8BD8B8481F50EE7218AF82B /* GCDWebServerFunctions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerFunctions.h; path = GCDWebServer/Core/GCDWebServerFunctions.h; sourceTree = "<group>"; };
+		F3B3391871A0FA0A9E41765B4BB6B532 /* TXAudioRawDataDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXAudioRawDataDelegate.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXAudioRawDataDelegate.h"; sourceTree = "<group>"; };
+		F4F447C4FB37FC88384D18DBE42DFF79 /* GCDWebServerResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerResponse.m; path = GCDWebServer/Core/GCDWebServerResponse.m; sourceTree = "<group>"; };
+		F7317EB9AB9C8D142D1EAF311C11E7F6 /* TXLiveAudioSessionDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXLiveAudioSessionDelegate.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXLiveAudioSessionDelegate.h"; sourceTree = "<group>"; };
+		F78372987BBC6DA05BA92DE10851B5B9 /* TXLiveSDKEventDef.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXLiveSDKEventDef.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXLiveSDKEventDef.h"; sourceTree = "<group>"; };
+		F8230FBD5508B9066824DA0CB3293D51 /* TXBitrateItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXBitrateItem.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXBitrateItem.h"; sourceTree = "<group>"; };
+		F9F2E1DCCDEA51610F468AED1346501B /* GCDWebServerFileResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerFileResponse.m; path = GCDWebServer/Responses/GCDWebServerFileResponse.m; sourceTree = "<group>"; };
+		FABB21DA868378717EC984FAA85CB28E /* V2TXLiveDef.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = V2TXLiveDef.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/V2TXLiveDef.h"; sourceTree = "<group>"; };
+		FD03DD826AE45B5B7915CDB17C3B6C54 /* GCDWebServer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GCDWebServer-Info.plist"; sourceTree = "<group>"; };
+		FED3F7334125562AD67C897AEC6E6659 /* TXAudioEffectManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXAudioEffectManager.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXAudioEffectManager.h"; sourceTree = "<group>"; };
 		FFCE9C1D821D75F69FF47AE041B36141 /* Pods-iOSPlayerDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iOSPlayerDemo-frameworks.sh"; sourceTree = "<group>"; };
+		FFD6BA02696399F2581EB40401840C23 /* TXPlayerGlobalSetting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TXPlayerGlobalSetting.h; path = "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/TXPlayerGlobalSetting.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -302,13 +300,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D79CFFADFAA4EF803E837AC2C41ABA7D /* Frameworks */ = {
+		78F8C7860B8297B3173DD6535D968B71 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BF3454F9E8C8AA5D178E13942AAA0F9 /* CFNetwork.framework in Frameworks */,
-				31D1078515CC49E04B301CEA88F4CFA4 /* Foundation.framework in Frameworks */,
-				A3E60021E7F811F56C5DE67E7F92A05C /* MobileCoreServices.framework in Frameworks */,
+				27855C2C780C55CCAF1175496FA92344 /* CFNetwork.framework in Frameworks */,
+				BE323AD81E43E7AB6023F0809165BBFD /* Foundation.framework in Frameworks */,
+				94DCCCE9E176F9DAA8BFB8F0D2AEF5D2 /* MobileCoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,39 +337,63 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		0A0F3DA21589D5C9938604CBF376C560 /* Core */ = {
+		154E9B8C521B69A1B5D12367A8BBE359 /* TXLiteAVSDK_Player */ = {
 			isa = PBXGroup;
 			children = (
-				9CA6F5AC7D6BBF748E5B240842109907 /* GCDWebServer.h */,
-				89AED6946C76F2A6F7054EB6CD9542B7 /* GCDWebServer.m */,
-				8B4EF43A3887AE2BE4C0140AF42A3DDD /* GCDWebServerConnection.h */,
-				4697E637D59D8A27644582CB4AD2EA3F /* GCDWebServerConnection.m */,
-				0667F7B27D35CADB8F653E7426063C14 /* GCDWebServerDataRequest.h */,
-				2AC4ADAB6E5623FB70435DB6455814BF /* GCDWebServerDataRequest.m */,
-				F196CE4A6DE66106157E270C1CF87EFA /* GCDWebServerDataResponse.h */,
-				1A84BFCF1F51AA27FA487FB2A485EEA1 /* GCDWebServerDataResponse.m */,
-				CA435D8F26DA6A261F26F9BD8FFFFA32 /* GCDWebServerErrorResponse.h */,
-				F68F9C8E839004B3FE05B23833F8514B /* GCDWebServerErrorResponse.m */,
-				D76B03C4C3651B7390BECAFDFFCDD506 /* GCDWebServerFileRequest.h */,
-				EE19D7454B6F382011EE7AAC4DBE88A8 /* GCDWebServerFileRequest.m */,
-				61D8CD2150FBD22FEA2EF217CAD86DBA /* GCDWebServerFileResponse.h */,
-				BC5668B133596F068870BEBB728AED40 /* GCDWebServerFileResponse.m */,
-				7D08DDCCB7ED61435036951029B2A121 /* GCDWebServerFunctions.h */,
-				B286A4B11202FBCCCA7B1F84D95D948F /* GCDWebServerFunctions.m */,
-				7E36E403CF4B6E5222DEA80C1AEAC429 /* GCDWebServerHTTPStatusCodes.h */,
-				7DF4CD6E468238D3CEE26DBBA9596D5B /* GCDWebServerMultiPartFormRequest.h */,
-				7E506E324BE14E6317DD5A2477165AD2 /* GCDWebServerMultiPartFormRequest.m */,
-				4730F779043D442D51335494D1EDB64D /* GCDWebServerPrivate.h */,
-				0DB931C7A654006858890C19E3CF3A86 /* GCDWebServerRequest.h */,
-				402048FB952B3454755D5376EB68DA20 /* GCDWebServerRequest.m */,
-				52FF7CAF42C9F0F9F021CC59DCF98CBD /* GCDWebServerResponse.h */,
-				D826B0C01D6C39834466DA6D17547B71 /* GCDWebServerResponse.m */,
-				288B765858D0A42676921941B937DA92 /* GCDWebServerStreamedResponse.h */,
-				AAB299E45FE90D64E13F046E1E6C1968 /* GCDWebServerStreamedResponse.m */,
-				A8C27A599D5584D692115B955801B9D2 /* GCDWebServerURLEncodedFormRequest.h */,
-				9ECA71658178F881DFFE41E9C3E66E5B /* GCDWebServerURLEncodedFormRequest.m */,
+				6CF3C9B205A9D564C1488B5893377142 /* ITRTCAudioPacketListener.h */,
+				BD5459D40EC504A84A6C82D9FCB72A73 /* TXAudioCustomProcessDelegate.h */,
+				FED3F7334125562AD67C897AEC6E6659 /* TXAudioEffectManager.h */,
+				F3B3391871A0FA0A9E41765B4BB6B532 /* TXAudioRawDataDelegate.h */,
+				DDF76898620F946B96D2E76CE3ED9AF5 /* TXBeautyManager.h */,
+				F8230FBD5508B9066824DA0CB3293D51 /* TXBitrateItem.h */,
+				5F72AAF992338A34DA2757C67B922F07 /* TXDeviceManager.h */,
+				8B0FC09E13EB985CAFEED36E6C3746AA /* TXImageSprite.h */,
+				A90C3B8C3E7A2D33A247DD4329ABFCA1 /* TXLiteAVBuffer.h */,
+				A6B2866E8AE765A11477692F5E151875 /* TXLiteAVCode.h */,
+				917034EB66C75722884E4419D5517CE4 /* TXLiteAVSDK.h */,
+				CD9931221DA524380A7F88ABDA225F0D /* TXLiteAVSymbolExport.h */,
+				F7317EB9AB9C8D142D1EAF311C11E7F6 /* TXLiveAudioSessionDelegate.h */,
+				460052EAEA276FB9C49678273CBF9AD9 /* TXLiveBase.h */,
+				98DE0D39ABFC8C32868101973FF8AED5 /* TXLivePlayConfig.h */,
+				378735B1B412D24BB82F122F4212AE9C /* TXLivePlayer.h */,
+				2F8ED809F3E7724B31BBF60567940A74 /* TXLivePlayListener.h */,
+				37045912B794FB1CF8FB769524367213 /* TXLiveRecordListener.h */,
+				308B6C1B172086B2818B0E02BADFEE20 /* TXLiveRecordTypeDef.h */,
+				F78372987BBC6DA05BA92DE10851B5B9 /* TXLiveSDKEventDef.h */,
+				053BE163E20088BE475B5FD14DC72B50 /* TXLiveSDKTypeDef.h */,
+				B607F80EFCBFFF0C00703E545922E9B3 /* TXPlayerAuthParams.h */,
+				CFA358A5384177B28B4FE1169D0DE74F /* TXPlayerDrmBuilder.h */,
+				FFD6BA02696399F2581EB40401840C23 /* TXPlayerGlobalSetting.h */,
+				8472238884CFFFFE00BF9BC184D53617 /* TXPlayerSubtitleRenderModel.h */,
+				EEE7FC78EC809B3F68B0FFD60AB5A366 /* TXTrackInfo.h */,
+				98494C3CA1059BA289DA2DD289B5F8A3 /* TXVideoCustomProcessDelegate.h */,
+				13EF91A2E8DB539C2338C3DB3FC7C60A /* TXVodDownloadDataSource.h */,
+				21AE87044B1604FC9A5A53B4E2EA2E9E /* TXVodDownloadManager.h */,
+				7860DBA7F603A6BD78CC9297578849F6 /* TXVodDownloadMediaInfo.h */,
+				90DC2ED0FDE9752BAFCEF1FAE51AF02E /* TXVodPlayConfig.h */,
+				D5EB3B2787CB4B24B58D07742A250C94 /* TXVodPlayer.h */,
+				398798B2B4C3238720BA0A6B1FA19AF8 /* TXVodPlayListener.h */,
+				53BC088812C26B642B169318A3962A67 /* TXVodPreloadManager.h */,
+				85A61230FC91AD6E4556BF1FD0B16120 /* TXVodSDKEventDef.h */,
+				5C1A1451290A15F7AF653E44C7A97FD0 /* V2TXLiveCode.h */,
+				FABB21DA868378717EC984FAA85CB28E /* V2TXLiveDef.h */,
+				EDF4AC62EF8F7E2E5F092169A47CABB7 /* V2TXLivePlayer.h */,
+				D61E56EC67AF8E3F848DD1408C214B70 /* V2TXLivePlayerObserver.h */,
+				42A265F715C497AE4BC707CD33C97494 /* V2TXLivePremier.h */,
+				339879D769CF08ACF7E7C958F16DEA52 /* V2TXLiveProperty.h */,
+				45FA0850120D88106EC67B5C5E2EC18A /* Frameworks */,
+				6A69EB6B02C05EF5D8DD39C61CC30002 /* Support Files */,
 			);
-			name = Core;
+			name = TXLiteAVSDK_Player;
+			path = TXLiteAVSDK_Player;
+			sourceTree = "<group>";
+		};
+		174D522F8564960FCA0243B0EEE71739 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				62399DD460BC676205640909EE99C798 /* CIPlayerAssistor.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		180F6D477E0A5C8DE9E6C44AF948E735 /* iOS */ = {
@@ -401,35 +423,88 @@
 			path = "Target Support Files/Pods-iOSPlayerDemo-iOSPlayerDemoUITests";
 			sourceTree = "<group>";
 		};
-		363AE5AB60292798370919CF09AAA985 /* Pods */ = {
+		2E26CCBFE1F42F07D0CB81E471B06E51 /* GCDWebServer */ = {
 			isa = PBXGroup;
 			children = (
-				A78159B9C8E1C4DCE30C643BA1076115 /* GCDWebServer */,
-				E09A1DE5A243E1037B9ABE19ED45F1FD /* OpenSSL-Universal */,
-				963E92E98BEE1E536552CEA3867A452C /* TXLiteAVSDK_Player */,
+				4282C42FB0A2DE8B733B412E26A523DE /* Core */,
+				DD806C51AE34BEB3565FE895E514CC00 /* Support Files */,
 			);
-			name = Pods;
+			name = GCDWebServer;
+			path = GCDWebServer;
 			sourceTree = "<group>";
 		};
-		5A1B8E3DC2280E278BB2194EBD351003 /* Frameworks */ = {
+		4282C42FB0A2DE8B733B412E26A523DE /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				840BC2EE8AC5419E0C7E3A73CE310443 /* TXFFmpeg.xcframework */,
-				C06E2BBAD4FF8E0AFDFB7FE056481133 /* TXLiteAVSDK_Player.xcframework */,
-				69A4C51F8455B4AA6875112F0CD1D7D3 /* TXSoundTouch.xcframework */,
+				8E51EDBDED53F9B04085D85DBE3E0529 /* GCDWebServer.h */,
+				CD890CF0F344AAE078E27CF0A948B268 /* GCDWebServer.m */,
+				71AC45D05950F61832CDE091716EAA1C /* GCDWebServerConnection.h */,
+				4072AB8F514AE6B99E73D38FA5F9B6E9 /* GCDWebServerConnection.m */,
+				6B6DDA872F5B3640FD0A1A0B4C9113C2 /* GCDWebServerDataRequest.h */,
+				2CA5682D6C1C0034E73403C218B55190 /* GCDWebServerDataRequest.m */,
+				EB7CC020EBE7BAD7CBE8ADC65D4B9E2E /* GCDWebServerDataResponse.h */,
+				434B112DFDEC0C172D9DE297E710B77F /* GCDWebServerDataResponse.m */,
+				E2F5B4041D5C65890D3427750536B4F1 /* GCDWebServerErrorResponse.h */,
+				A7B616FE53F540E0745CC785225A0A15 /* GCDWebServerErrorResponse.m */,
+				AAC037A9A348B777E858A8DD993F4588 /* GCDWebServerFileRequest.h */,
+				B7214A35EF0C54F9B48F3E461532097B /* GCDWebServerFileRequest.m */,
+				AEF022BB513A41F900445013AE8A9669 /* GCDWebServerFileResponse.h */,
+				F9F2E1DCCDEA51610F468AED1346501B /* GCDWebServerFileResponse.m */,
+				F369DC85C8BD8B8481F50EE7218AF82B /* GCDWebServerFunctions.h */,
+				4750E95274F5766F51BC12A66C5815C3 /* GCDWebServerFunctions.m */,
+				1F64915CCA7E822BFA88069B9EE73D7C /* GCDWebServerHTTPStatusCodes.h */,
+				C9DBAD00E0761207976EDBCE9460AA7A /* GCDWebServerMultiPartFormRequest.h */,
+				31009CD2B98EF7D23B928D5D41531D24 /* GCDWebServerMultiPartFormRequest.m */,
+				8CE4F384E7B0E8B501EBEF5E2C2A4457 /* GCDWebServerPrivate.h */,
+				EFC99D9BC58E05CA321A61B07F9DE7C1 /* GCDWebServerRequest.h */,
+				51B3849869665BAA44820C86DC2E8946 /* GCDWebServerRequest.m */,
+				68AB2325C0ADC4F65A674F2240C20B9B /* GCDWebServerResponse.h */,
+				F4F447C4FB37FC88384D18DBE42DFF79 /* GCDWebServerResponse.m */,
+				DE6C2D1BB78B50C42E6279A21042A761 /* GCDWebServerStreamedResponse.h */,
+				28ABD0CDC8063D9F3CFE5543B92C3737 /* GCDWebServerStreamedResponse.m */,
+				3096B0BE6ABE04CF8FE0658D9336C576 /* GCDWebServerURLEncodedFormRequest.h */,
+				661C9A6409154169E18637379E349B95 /* GCDWebServerURLEncodedFormRequest.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		45FA0850120D88106EC67B5C5E2EC18A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E032C9BF8455589C7C8DC0D60A181937 /* TXFFmpeg.xcframework */,
+				6484FAF691748D29AA8AAD6879339F1A /* TXLiteAVSDK_Player.xcframework */,
+				C7AB75CE824AB1629B2BFEE44743057B /* TXSoundTouch.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		66A445F33C53AB9B660FD3C4B5D10386 /* CIPlayerAssistor */ = {
+		5BA757557FBC9E660E869F6A89C96CA5 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				ED922A26CDC26E483113CCA23379E332 /* Frameworks */,
-				B78ED2476E8DCB204AEBDF7813DECFF2 /* Pod */,
-				D605B131B4149FDBFD475C8AF5F82BF0 /* Support Files */,
+				021A788A3C116E91FA0A6732271F7941 /* CIPlayerAssistor.debug.xcconfig */,
+				B68C8035FA033C333DEE32DACEB1CB3F /* CIPlayerAssistor.release.xcconfig */,
 			);
-			name = CIPlayerAssistor;
-			path = ../..;
+			name = "Support Files";
+			path = "../Target Support Files/CIPlayerAssistor";
+			sourceTree = "<group>";
+		};
+		6A69EB6B02C05EF5D8DD39C61CC30002 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				56AF6B7479658C71AC15F5983BD4BB13 /* TXLiteAVSDK_Player-xcframeworks.sh */,
+				8038EC5E9027DFDE5B403F771EC96FBD /* TXLiteAVSDK_Player.debug.xcconfig */,
+				7AA37064FFE02BD7E993B8E8B2088825 /* TXLiteAVSDK_Player.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TXLiteAVSDK_Player";
+			sourceTree = "<group>";
+		};
+		7DBC661561D38B31BCA573029F0671F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1BE49A047C478E3A642534884003E883 /* OpenSSL.xcframework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		85D5F083755FB093A959169D552BC7A6 /* Pods-iOSPlayerDemoTests */ = {
@@ -458,55 +533,36 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		963E92E98BEE1E536552CEA3867A452C /* TXLiteAVSDK_Player */ = {
+		9055A2F28F67DA8AB2A2B4935259CB82 /* OpenSSL-Universal */ = {
 			isa = PBXGroup;
 			children = (
-				56EAF9D642A60F549889493715C73BFA /* ITRTCAudioPacketListener.h */,
-				20311A521DB79FD33ADEAAE945A41013 /* TXAudioCustomProcessDelegate.h */,
-				1BA10C8343AD05DE54FCC99EB14E04CE /* TXAudioEffectManager.h */,
-				D6592C51FBB1F57897A0E1255A8ED7C7 /* TXAudioRawDataDelegate.h */,
-				8067E38ECB9CC658E343F0566FACD035 /* TXBeautyManager.h */,
-				BC971E8E392C01F17AF7B6A593C244D4 /* TXBitrateItem.h */,
-				BB3113D3F288557D458DB5CEF0491B30 /* TXDeviceManager.h */,
-				F0CFF1E9E15941EA7394982937C93588 /* TXImageSprite.h */,
-				84C436F5ED8EBEF102EC61949AFFBDF9 /* TXLiteAVBuffer.h */,
-				92CA049740CEAE2D47EF0E00E5742B9E /* TXLiteAVCode.h */,
-				0C017A668B1D0EB44BE718D8869B0CC3 /* TXLiteAVSDK.h */,
-				2FFBED9FAA2BBB1C11BC9B302A22154E /* TXLiteAVSymbolExport.h */,
-				AC0539B30C10D1712F7AB216138E353A /* TXLiveAudioSessionDelegate.h */,
-				C275EFC064FA33144441160AE26DC4BF /* TXLiveBase.h */,
-				C28ABB960332E8ADCFA96C89193DE4EF /* TXLivePlayConfig.h */,
-				8453C4E19B2C8C37E23FE887FB13BFB6 /* TXLivePlayer.h */,
-				4B681A37178BC7532DBD2872CFE0C467 /* TXLivePlayListener.h */,
-				CFA619FA02CD28AAD83DBFB93D30A2E1 /* TXLiveRecordListener.h */,
-				8FF34DE46792C46D66F1699394D19300 /* TXLiveRecordTypeDef.h */,
-				6E68813A8A697311AD881F0617A8DA01 /* TXLiveSDKEventDef.h */,
-				25B3F7C8DE2CB0F2C169F239E7CBD8AC /* TXLiveSDKTypeDef.h */,
-				D7AC87D37A32CD69C10929828BF0CE86 /* TXPlayerAuthParams.h */,
-				AAFE25C6819B054E1279262E3C9EE1E7 /* TXPlayerDrmBuilder.h */,
-				B4BB6DF5C1946245195D7F391FC2DE8F /* TXPlayerGlobalSetting.h */,
-				B28F7E766CD643D0884010D47AB46CF8 /* TXPlayerSubtitleRenderModel.h */,
-				6BC6F2521317EF5E88A25155A7C65164 /* TXTrackInfo.h */,
-				C203F4FF13D6F6836A1E0C071E77BF49 /* TXVideoCustomProcessDelegate.h */,
-				AA9A6DD79FE76CC2B8B802452EF99801 /* TXVodDownloadDataSource.h */,
-				69C13954FA4DFBE7EBE5680300C89A12 /* TXVodDownloadManager.h */,
-				BFFF77EE9B9F44F64877D17D10D07D31 /* TXVodDownloadMediaInfo.h */,
-				7CE39F50E117F4D131A56727BCB63AA1 /* TXVodPlayConfig.h */,
-				51A0138C735FEBCB27F30888AEEF47E7 /* TXVodPlayer.h */,
-				5648BDA00DF906457BC60D5C5E7560FA /* TXVodPlayListener.h */,
-				D5D3D5FF3C95D35EF6C5FAF71D5FEE8C /* TXVodPreloadManager.h */,
-				2946F4906FC22EFAF597867D91C6715C /* TXVodSDKEventDef.h */,
-				C1BB6926B9AF66FB9A1CF5BC7B3D2AD8 /* V2TXLiveCode.h */,
-				1BD47218BC5A254D792D3368C356FB37 /* V2TXLiveDef.h */,
-				D5F90926E1D09EBCDC93D11073813599 /* V2TXLivePlayer.h */,
-				1FFE3E387C62A6F99E78F7AE65AEB34D /* V2TXLivePlayerObserver.h */,
-				00999875C83BF1C0009E6153C9AD0CED /* V2TXLivePremier.h */,
-				A258BBDA08AE87DDE98FFA9DAB69105A /* V2TXLiveProperty.h */,
-				5A1B8E3DC2280E278BB2194EBD351003 /* Frameworks */,
-				CB9257947FB30DC08CF5E8B46EFFD0A3 /* Support Files */,
+				7DBC661561D38B31BCA573029F0671F5 /* Frameworks */,
+				9D2F93957E182288189D7CAE854B744C /* Support Files */,
 			);
-			name = TXLiteAVSDK_Player;
-			path = TXLiteAVSDK_Player;
+			name = "OpenSSL-Universal";
+			path = "OpenSSL-Universal";
+			sourceTree = "<group>";
+		};
+		9803B349467BA6400250797FC28871E6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E784BF9E657DB3088736BD1F6F637E3F /* CIPlayerAssistor */,
+				2E26CCBFE1F42F07D0CB81E471B06E51 /* GCDWebServer */,
+				9055A2F28F67DA8AB2A2B4935259CB82 /* OpenSSL-Universal */,
+				154E9B8C521B69A1B5D12367A8BBE359 /* TXLiteAVSDK_Player */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9D2F93957E182288189D7CAE854B744C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AC60318870E1BFE97DC4047C589A982E /* OpenSSL-Universal-xcframeworks.sh */,
+				657C4D901E818B8F3F66B0CDD15EA5C5 /* OpenSSL-Universal.debug.xcconfig */,
+				2BB0394300D78242023E878D1FA21493 /* OpenSSL-Universal.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/OpenSSL-Universal";
 			sourceTree = "<group>";
 		};
 		A268B008365BEF6F800F2DC0E0E75AD0 /* Products */ = {
@@ -520,116 +576,40 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A78159B9C8E1C4DCE30C643BA1076115 /* GCDWebServer */ = {
-			isa = PBXGroup;
-			children = (
-				0A0F3DA21589D5C9938604CBF376C560 /* Core */,
-				AC5610A1AC510AB14B815273FF0514A7 /* Support Files */,
-			);
-			name = GCDWebServer;
-			path = GCDWebServer;
-			sourceTree = "<group>";
-		};
-		AC5610A1AC510AB14B815273FF0514A7 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				8C673B320AE63A3F203EBA84AC1CA8D4 /* GCDWebServer.modulemap */,
-				A7AB1190AB18393A6D0F4D2BC45ED24F /* GCDWebServer-dummy.m */,
-				C0CF2A86E84CC93B69BB9A4E698212C5 /* GCDWebServer-Info.plist */,
-				2D6CFBBEE63D2744E045CAFF44A99A6F /* GCDWebServer-prefix.pch */,
-				335D4746E68A0E71467BF688DA8DCF3C /* GCDWebServer-umbrella.h */,
-				DD840FBE45CD3A44F1D47650CDA6D667 /* GCDWebServer.debug.xcconfig */,
-				EB548EB037E312A2793F3C6EDA571707 /* GCDWebServer.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/GCDWebServer";
-			sourceTree = "<group>";
-		};
-		B244991F05FE411C86E3B82434128513 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				66A445F33C53AB9B660FD3C4B5D10386 /* CIPlayerAssistor */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		B78ED2476E8DCB204AEBDF7813DECFF2 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				D5931582190675F572197F776621A774 /* CIPlayerAssistor.podspec */,
-				769BC58000BDE9FEAE6EC84A9F995947 /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		CB9257947FB30DC08CF5E8B46EFFD0A3 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				5CD4F99078220A300F6D5EE2972B2C6C /* TXLiteAVSDK_Player-xcframeworks.sh */,
-				DE622B90DE3C0DC8B11C941F95FA8F68 /* TXLiteAVSDK_Player.debug.xcconfig */,
-				8D18E57A0A1BBA50CB3FE5C3AA6F3698 /* TXLiteAVSDK_Player.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/TXLiteAVSDK_Player";
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				B244991F05FE411C86E3B82434128513 /* Development Pods */,
 				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
-				363AE5AB60292798370919CF09AAA985 /* Pods */,
+				9803B349467BA6400250797FC28871E6 /* Pods */,
 				A268B008365BEF6F800F2DC0E0E75AD0 /* Products */,
 				88525E69127AEC45C3C2E90200A2D677 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D605B131B4149FDBFD475C8AF5F82BF0 /* Support Files */ = {
+		DD806C51AE34BEB3565FE895E514CC00 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				1B539A736930186EB2B8F5CE43BBD5C6 /* CIPlayerAssistor.debug.xcconfig */,
-				94E6F9E4B095741398DC5F19BF454607 /* CIPlayerAssistor.release.xcconfig */,
+				7AE6B97A439C2865B3C24E5AE71A4A6D /* GCDWebServer.modulemap */,
+				BFE440D445BBBA106A5EC6542B508876 /* GCDWebServer-dummy.m */,
+				FD03DD826AE45B5B7915CDB17C3B6C54 /* GCDWebServer-Info.plist */,
+				ADA8FFB357D7EB3BE0317CAF437A9EEB /* GCDWebServer-prefix.pch */,
+				259F890C924843DFCF3C880382101FB5 /* GCDWebServer-umbrella.h */,
+				11B83797150315F2B1A7F994C459043A /* GCDWebServer.debug.xcconfig */,
+				453AEF2FB3208C0A5EBA24262A9F43FA /* GCDWebServer.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "iOSPlayerDemo/Pods/Target Support Files/CIPlayerAssistor";
+			path = "../Target Support Files/GCDWebServer";
 			sourceTree = "<group>";
 		};
-		D8EFE8074C95E509E0460C1DBFBE8D6C /* Support Files */ = {
+		E784BF9E657DB3088736BD1F6F637E3F /* CIPlayerAssistor */ = {
 			isa = PBXGroup;
 			children = (
-				5B5DD1604BEC7B9AAFC8F4ADDCC62123 /* OpenSSL-Universal-xcframeworks.sh */,
-				566B03110DE7DDE8A82270CB890C58CA /* OpenSSL-Universal.debug.xcconfig */,
-				AF7CC47CFBBA2DF45B0CB9859977EB5E /* OpenSSL-Universal.release.xcconfig */,
+				174D522F8564960FCA0243B0EEE71739 /* Frameworks */,
+				5BA757557FBC9E660E869F6A89C96CA5 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/OpenSSL-Universal";
-			sourceTree = "<group>";
-		};
-		E09A1DE5A243E1037B9ABE19ED45F1FD /* OpenSSL-Universal */ = {
-			isa = PBXGroup;
-			children = (
-				EE5B7A9216829EC54CA469BFC9D3D1F8 /* Frameworks */,
-				D8EFE8074C95E509E0460C1DBFBE8D6C /* Support Files */,
-			);
-			name = "OpenSSL-Universal";
-			path = "OpenSSL-Universal";
-			sourceTree = "<group>";
-		};
-		ED922A26CDC26E483113CCA23379E332 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				7621C6D596DF875246C68A247DC8C60B /* CIPlayerAssistor.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		EE5B7A9216829EC54CA469BFC9D3D1F8 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				7DFA6D1D429E47483B92F99E6DA4B709 /* OpenSSL.xcframework */,
-			);
-			name = Frameworks;
+			name = CIPlayerAssistor;
+			path = CIPlayerAssistor;
 			sourceTree = "<group>";
 		};
 		F102B94A07FA72ED6353781568F36929 /* Pods-iOSPlayerDemo */ = {
@@ -652,26 +632,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1B128F13A49B6B2C4459F25CEEE6C255 /* Headers */ = {
+		73772F6F11E974D4E2B99AAD2F865340 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				481E3060246A589DF637F0FFCA1E1C27 /* GCDWebServer.h in Headers */,
-				07ADCD5E21A726C4B2AF21A09BD265F8 /* GCDWebServer-umbrella.h in Headers */,
-				2BB922ED8FE44E0D41E9BD916CC78CF8 /* GCDWebServerConnection.h in Headers */,
-				EE9859F0BA57D877377CECC03EB77BD5 /* GCDWebServerDataRequest.h in Headers */,
-				D85879ED7115DB3F8DE22A91FA454711 /* GCDWebServerDataResponse.h in Headers */,
-				93364DBF504FF87A9672C9C9CA763625 /* GCDWebServerErrorResponse.h in Headers */,
-				8242107BEA054C8EA27FD320010FB95E /* GCDWebServerFileRequest.h in Headers */,
-				F280D194659AA76C1D43F6637935845B /* GCDWebServerFileResponse.h in Headers */,
-				C2604D60BC77B44FB79D1FB6EB683661 /* GCDWebServerFunctions.h in Headers */,
-				5DDFB58DD52163348FE432F152C24799 /* GCDWebServerHTTPStatusCodes.h in Headers */,
-				6DB657D25637CAFCA6947F289444C474 /* GCDWebServerMultiPartFormRequest.h in Headers */,
-				53E87FDDC64405254BB69254DB0797FF /* GCDWebServerPrivate.h in Headers */,
-				646E32528B7FFEC63C5C0E773E4D99DE /* GCDWebServerRequest.h in Headers */,
-				51287F03690A7F75E8154A2647484DB8 /* GCDWebServerResponse.h in Headers */,
-				BC243CB0C33ABB0AECEF3F70170BA432 /* GCDWebServerStreamedResponse.h in Headers */,
-				FFF54686EA19D6EE13BD8CBFB4597514 /* GCDWebServerURLEncodedFormRequest.h in Headers */,
+				71DF9582E7D41BEF782CB74A31150668 /* GCDWebServer.h in Headers */,
+				3139AA0860B9B39C3C269834D02579CC /* GCDWebServer-umbrella.h in Headers */,
+				CF26E80CB6809176FCA153FDA797C354 /* GCDWebServerConnection.h in Headers */,
+				6DECA7CC0686F01B62B97E61D3E75161 /* GCDWebServerDataRequest.h in Headers */,
+				B24470D8B09241DA4AABBC9582861C5E /* GCDWebServerDataResponse.h in Headers */,
+				E1FF56F5D5B4FD51BAB9799AC1C4BA50 /* GCDWebServerErrorResponse.h in Headers */,
+				296AC92DE4729C0F7D23EC715C30B3C4 /* GCDWebServerFileRequest.h in Headers */,
+				3FE4A76925393DC76C4C935F4EF597E4 /* GCDWebServerFileResponse.h in Headers */,
+				C3BEAB99BD34788936B781FF195EB2C3 /* GCDWebServerFunctions.h in Headers */,
+				CF81EB91EB16CBCEFAE496274021DC27 /* GCDWebServerHTTPStatusCodes.h in Headers */,
+				06B4705626C0CABDCBDD2FBBE1DD117D /* GCDWebServerMultiPartFormRequest.h in Headers */,
+				14775631790E433BA9A3DABBE14A4FC3 /* GCDWebServerPrivate.h in Headers */,
+				7D6267D295728470DD65830D74CEA35B /* GCDWebServerRequest.h in Headers */,
+				2FF8A69D72ECEAA4A628905F67B070D4 /* GCDWebServerResponse.h in Headers */,
+				25C6E37F301F10AB24E864FF40DB249F /* GCDWebServerStreamedResponse.h in Headers */,
+				C50A372C496296B7EA330DFC9F5B0508 /* GCDWebServerURLEncodedFormRequest.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -714,7 +694,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				5E7B1E9AEB634CD9B9D1E4CA0A8BB27D /* PBXTargetDependency */,
+				4F879D9E0EEB7D79225F1A42564FF3DD /* PBXTargetDependency */,
 			);
 			name = "Pods-iOSPlayerDemoTests";
 			productName = Pods_iOSPlayerDemoTests;
@@ -733,10 +713,10 @@
 			buildRules = (
 			);
 			dependencies = (
-				AA80C17D9093F215C537ACC06547F9CA /* PBXTargetDependency */,
-				DE052B4A6F32EC0E8669A601C2051200 /* PBXTargetDependency */,
-				E750A1252229745B697B7EDE7F0174D4 /* PBXTargetDependency */,
-				FC6D76C77ABAD3A28841577719323733 /* PBXTargetDependency */,
+				2A14AFC634C2146B4BE25F0C23A0B805 /* PBXTargetDependency */,
+				0AC3978E73BAC7833ECB1B8AF52ED855 /* PBXTargetDependency */,
+				04CB368AAF336965F94E5E3A8BB66A82 /* PBXTargetDependency */,
+				C1EBA84DA88DB11F9FF06B601E6AB891 /* PBXTargetDependency */,
 			);
 			name = "Pods-iOSPlayerDemo";
 			productName = Pods_iOSPlayerDemo;
@@ -745,12 +725,12 @@
 		};
 		AD904F32069787EFB2DFFE05EB82F5BD /* GCDWebServer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 40E95713A7E2A3EBB4165ED2CDD28B11 /* Build configuration list for PBXNativeTarget "GCDWebServer" */;
+			buildConfigurationList = 7128809D7E68A7DE407B2B0ED9A678F0 /* Build configuration list for PBXNativeTarget "GCDWebServer" */;
 			buildPhases = (
-				1B128F13A49B6B2C4459F25CEEE6C255 /* Headers */,
-				DFAF1F5BF8A6D605A8459AADECD0BD0D /* Sources */,
-				D79CFFADFAA4EF803E837AC2C41ABA7D /* Frameworks */,
-				A25AB60CACFB7155784D910EBB2FCEF0 /* Resources */,
+				73772F6F11E974D4E2B99AAD2F865340 /* Headers */,
+				3E72E749341BDBE87903F71AB43741F0 /* Sources */,
+				78F8C7860B8297B3173DD6535D968B71 /* Frameworks */,
+				7B97A4872B1DD786A266895D4D89C302 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -773,10 +753,10 @@
 			buildRules = (
 			);
 			dependencies = (
-				537A11C48A0B21ECA4C4F720AEB49C76 /* PBXTargetDependency */,
-				D8E1602556D4C52FDFA5A3D93347E2E5 /* PBXTargetDependency */,
-				91AF16316628E40A5472A24644F8D0DE /* PBXTargetDependency */,
-				3704D1CAD385C6522C6E4C851A1F6023 /* PBXTargetDependency */,
+				66F39FDB8FC30039FCEF19973D2C09BC /* PBXTargetDependency */,
+				DA31E9BC7B004FBB9D89093B992EB2B9 /* PBXTargetDependency */,
+				5C06E5685D39E7C4070DFA1E279C9EB3 /* PBXTargetDependency */,
+				2D17DA55219DA7C349932471D6C00824 /* PBXTargetDependency */,
 			);
 			name = "Pods-iOSPlayerDemo-iOSPlayerDemoUITests";
 			productName = Pods_iOSPlayerDemo_iOSPlayerDemoUITests;
@@ -838,7 +818,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A25AB60CACFB7155784D910EBB2FCEF0 /* Resources */ = {
+		7B97A4872B1DD786A266895D4D89C302 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -848,7 +828,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		55D23F1975C93E19A7FC8568B4E07BD0 /* [CP] Copy XCFrameworks */ = {
+		103E8F363DE209FDB22056092284ECBA /* [CP] Copy XCFrameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -893,6 +873,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3E72E749341BDBE87903F71AB43741F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94D2F8665F5329FE079B5DB642988B2D /* GCDWebServer.m in Sources */,
+				C6252EFA696526971E9D9B9DE1F02517 /* GCDWebServer-dummy.m in Sources */,
+				B2F2BA08CBFE1418EB4704B9EA0873E6 /* GCDWebServerConnection.m in Sources */,
+				8C941771DA75F6FBE03D7A71F1F55F9D /* GCDWebServerDataRequest.m in Sources */,
+				EB529DA0E853FDF3BD53807E43830187 /* GCDWebServerDataResponse.m in Sources */,
+				E40A0305C7E2A4090FE0C24B0E941A17 /* GCDWebServerErrorResponse.m in Sources */,
+				56E7ED80DCDC46C3AE355998D81996A8 /* GCDWebServerFileRequest.m in Sources */,
+				42AF9C2582AFC3FB46B6DBCC70FE4D2F /* GCDWebServerFileResponse.m in Sources */,
+				4A74B95896F6E56A8CDDF6DEE098288E /* GCDWebServerFunctions.m in Sources */,
+				76315F6E61064C1DE0988195AF0CFDFE /* GCDWebServerMultiPartFormRequest.m in Sources */,
+				3095ECE333752F9773F7DF4F933C7D02 /* GCDWebServerRequest.m in Sources */,
+				B9A50A29E7EE031736491348DC248707 /* GCDWebServerResponse.m in Sources */,
+				6CABD3F9A3D96F136CEE7046CA09A5E3 /* GCDWebServerStreamedResponse.m in Sources */,
+				07B7CC8E993835E33F3644EF14EBBA22 /* GCDWebServerURLEncodedFormRequest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A8D185C2314385FFF041F8B54149BFCC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -909,99 +910,112 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DFAF1F5BF8A6D605A8459AADECD0BD0D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3EEE112FEA7BF3E5C7B542762A107AA3 /* GCDWebServer.m in Sources */,
-				3D89A2E8663DE9120702A8255252E290 /* GCDWebServer-dummy.m in Sources */,
-				9D710C68782C8BC4CC14ED85E06BEF10 /* GCDWebServerConnection.m in Sources */,
-				F9F9E698D4ED214DCCE718B93836069F /* GCDWebServerDataRequest.m in Sources */,
-				F59901DABFD34877783A833546F14FD8 /* GCDWebServerDataResponse.m in Sources */,
-				D8D2A3715B242975B7CFC03A4082AAE5 /* GCDWebServerErrorResponse.m in Sources */,
-				E5046E509BB260EE7B23AEE94F9746E1 /* GCDWebServerFileRequest.m in Sources */,
-				BBE3409D476C67516A6F755740FF54A9 /* GCDWebServerFileResponse.m in Sources */,
-				4F85F6032242AFC66DC28CCD22A06986 /* GCDWebServerFunctions.m in Sources */,
-				9BC1340078839E51BE3277B815016BD2 /* GCDWebServerMultiPartFormRequest.m in Sources */,
-				9DAB6C6704D0373B2BF7A61CB481DE83 /* GCDWebServerRequest.m in Sources */,
-				165AEE862F4AD7599AF379EA354FC56C /* GCDWebServerResponse.m in Sources */,
-				115683DA0CF19DAF37E6591F0C0CD7A5 /* GCDWebServerStreamedResponse.m in Sources */,
-				105678FB543D08B8C0969F95E0CD930D /* GCDWebServerURLEncodedFormRequest.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3704D1CAD385C6522C6E4C851A1F6023 /* PBXTargetDependency */ = {
+		04CB368AAF336965F94E5E3A8BB66A82 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = TXLiteAVSDK_Player;
-			target = 74FAE5C6D0BD5C701414845F3CF13BDB /* TXLiteAVSDK_Player */;
-			targetProxy = E96C39E7FAF59E56C69FBD6994E6864E /* PBXContainerItemProxy */;
+			name = "OpenSSL-Universal";
+			target = B9ED5194E665042005069EF06C82A050 /* OpenSSL-Universal */;
+			targetProxy = FC5FB85FC440E61BDE0D0A14779F120B /* PBXContainerItemProxy */;
 		};
-		537A11C48A0B21ECA4C4F720AEB49C76 /* PBXTargetDependency */ = {
+		0AC3978E73BAC7833ECB1B8AF52ED855 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GCDWebServer;
+			target = AD904F32069787EFB2DFFE05EB82F5BD /* GCDWebServer */;
+			targetProxy = 6055D21CE6A9DE59210284D3E8C82B8E /* PBXContainerItemProxy */;
+		};
+		2A14AFC634C2146B4BE25F0C23A0B805 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CIPlayerAssistor;
 			target = 3D1E2F1C9164ADC7FD17977F3E0617BC /* CIPlayerAssistor */;
-			targetProxy = 8E2ACEAE8DD4AD9B193365DB601D90CB /* PBXContainerItemProxy */;
+			targetProxy = 23D6D0DD1C722380E7EB8B73992DA46F /* PBXContainerItemProxy */;
 		};
-		5E7B1E9AEB634CD9B9D1E4CA0A8BB27D /* PBXTargetDependency */ = {
+		2D17DA55219DA7C349932471D6C00824 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TXLiteAVSDK_Player;
+			target = 74FAE5C6D0BD5C701414845F3CF13BDB /* TXLiteAVSDK_Player */;
+			targetProxy = 4DA7FD688948BD5EE3F381BC70A1606B /* PBXContainerItemProxy */;
+		};
+		474E4778D1A52E0A16B5B17F9FF22991 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GCDWebServer;
+			target = AD904F32069787EFB2DFFE05EB82F5BD /* GCDWebServer */;
+			targetProxy = 2C524E2C8661AF8814351D7056D1B386 /* PBXContainerItemProxy */;
+		};
+		4F879D9E0EEB7D79225F1A42564FF3DD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-iOSPlayerDemo";
 			target = 75A69A23E969992BDD63FB02414A23FB /* Pods-iOSPlayerDemo */;
-			targetProxy = 1CC171154B90CF00E4E12B4C69E5D0EA /* PBXContainerItemProxy */;
+			targetProxy = AD4C86BEDA2EBE639AAFD740232D8E24 /* PBXContainerItemProxy */;
 		};
-		62D46A33F40535A0173EF6EEDED5E482 /* PBXTargetDependency */ = {
+		5C06E5685D39E7C4070DFA1E279C9EB3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "OpenSSL-Universal";
 			target = B9ED5194E665042005069EF06C82A050 /* OpenSSL-Universal */;
-			targetProxy = 77FC6516427DCD9DAF8A7EC3582035ED /* PBXContainerItemProxy */;
+			targetProxy = B311137A25C972F59665128ABA4BB0B3 /* PBXContainerItemProxy */;
 		};
-		91AF16316628E40A5472A24644F8D0DE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "OpenSSL-Universal";
-			target = B9ED5194E665042005069EF06C82A050 /* OpenSSL-Universal */;
-			targetProxy = D17F67C3B1E1B388D9B45BD7C2816B5E /* PBXContainerItemProxy */;
-		};
-		AA80C17D9093F215C537ACC06547F9CA /* PBXTargetDependency */ = {
+		66F39FDB8FC30039FCEF19973D2C09BC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CIPlayerAssistor;
 			target = 3D1E2F1C9164ADC7FD17977F3E0617BC /* CIPlayerAssistor */;
-			targetProxy = DCBF726D170CDAE53F4D761EAD02021A /* PBXContainerItemProxy */;
+			targetProxy = 0DB4D46C7900372EF944EAB0BE306E84 /* PBXContainerItemProxy */;
 		};
-		D8E1602556D4C52FDFA5A3D93347E2E5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = GCDWebServer;
-			target = AD904F32069787EFB2DFFE05EB82F5BD /* GCDWebServer */;
-			targetProxy = 84E274D853E6957EED5861DBE82E132D /* PBXContainerItemProxy */;
-		};
-		DE052B4A6F32EC0E8669A601C2051200 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = GCDWebServer;
-			target = AD904F32069787EFB2DFFE05EB82F5BD /* GCDWebServer */;
-			targetProxy = 19BA755C21A22B78C58231BB4F5AF249 /* PBXContainerItemProxy */;
-		};
-		E750A1252229745B697B7EDE7F0174D4 /* PBXTargetDependency */ = {
+		8518420770FF9F89AAE761BF6DF8FDBD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "OpenSSL-Universal";
 			target = B9ED5194E665042005069EF06C82A050 /* OpenSSL-Universal */;
-			targetProxy = 6A6075A28437356DC44491C885E46DB5 /* PBXContainerItemProxy */;
+			targetProxy = 8904B6F772372B2DFD0857B23F6FCB69 /* PBXContainerItemProxy */;
 		};
-		EBF9A32CCAD630A999D23EE346F802B4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = GCDWebServer;
-			target = AD904F32069787EFB2DFFE05EB82F5BD /* GCDWebServer */;
-			targetProxy = 36233C58F152729A1FC3738F3864202F /* PBXContainerItemProxy */;
-		};
-		FC6D76C77ABAD3A28841577719323733 /* PBXTargetDependency */ = {
+		C1EBA84DA88DB11F9FF06B601E6AB891 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TXLiteAVSDK_Player;
 			target = 74FAE5C6D0BD5C701414845F3CF13BDB /* TXLiteAVSDK_Player */;
-			targetProxy = C4A0F2C7FA4B93C6672C3C3E3BE1915A /* PBXContainerItemProxy */;
+			targetProxy = 402AE4B75A26D086D2DCFC4F29A69916 /* PBXContainerItemProxy */;
+		};
+		DA31E9BC7B004FBB9D89093B992EB2B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GCDWebServer;
+			target = AD904F32069787EFB2DFFE05EB82F5BD /* GCDWebServer */;
+			targetProxy = 90450E49D19FE6A4A9B82C3E3EA5C937 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0122B6DC2D5D992E909BACC6850F14D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 453AEF2FB3208C0A5EBA24262A9F43FA /* GCDWebServer.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GCDWebServer/GCDWebServer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GCDWebServer/GCDWebServer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/GCDWebServer/GCDWebServer.modulemap";
+				PRODUCT_MODULE_NAME = GCDWebServer;
+				PRODUCT_NAME = GCDWebServer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		0CDE70C568833269FB6C4D348AA70D52 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8C7402F5B029C99B5CA3A615B5984419 /* Pods-iOSPlayerDemo-iOSPlayerDemoUITests.release.xcconfig */;
@@ -1180,40 +1194,6 @@
 			};
 			name = Debug;
 		};
-		3BA96C5AADF539DC459B976156327EEC /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EB548EB037E312A2793F3C6EDA571707 /* GCDWebServer.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/GCDWebServer/GCDWebServer-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/GCDWebServer/GCDWebServer-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/GCDWebServer/GCDWebServer.modulemap";
-				PRODUCT_MODULE_NAME = GCDWebServer;
-				PRODUCT_NAME = GCDWebServer;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		45D85CCD6819B5E7CCF51E37C00EA1DA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C4C7C2ACF2DE0C829B300356FB6E7E14 /* Pods-iOSPlayerDemo-iOSPlayerDemoUITests.debug.xcconfig */;
@@ -1313,57 +1293,6 @@
 			};
 			name = Release;
 		};
-		74FFD9E466DB9A11C34801D7AF188180 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AF7CC47CFBBA2DF45B0CB9859977EB5E /* OpenSSL-Universal.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		79BD09977A7DCB09B7E9237B05AE90A7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DD840FBE45CD3A44F1D47650CDA6D667 /* GCDWebServer.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/GCDWebServer/GCDWebServer-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/GCDWebServer/GCDWebServer-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/GCDWebServer/GCDWebServer.modulemap";
-				PRODUCT_MODULE_NAME = GCDWebServer;
-				PRODUCT_NAME = GCDWebServer;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		82F9AD213D185E7927BEF8F4444D2270 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8794B15176E9934247D093E18782F3B1 /* Pods-iOSPlayerDemo.release.xcconfig */;
@@ -1402,26 +1331,9 @@
 			};
 			name = Release;
 		};
-		971514BC014B4AE63EC543553957382C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 566B03110DE7DDE8A82270CB890C58CA /* OpenSSL-Universal.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 		B10AFCF0A26C9BBAE786CC0A4980622A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8D18E57A0A1BBA50CB3FE5C3AA6F3698 /* TXLiteAVSDK_Player.release.xcconfig */;
+			baseConfigurationReference = 7AA37064FFE02BD7E993B8E8B2088825 /* TXLiteAVSDK_Player.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1438,7 +1350,7 @@
 		};
 		B431088E7312D064B90223F4E8F20B1D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1B539A736930186EB2B8F5CE43BBD5C6 /* CIPlayerAssistor.debug.xcconfig */;
+			baseConfigurationReference = 021A788A3C116E91FA0A6732271F7941 /* CIPlayerAssistor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1453,9 +1365,27 @@
 			};
 			name = Debug;
 		};
+		C49B7E3C714B8AE804AFB951B3F2B579 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BB0394300D78242023E878D1FA21493 /* OpenSSL-Universal.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		D923322B8E5CF6DC0B319D073ECDEE3E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 94E6F9E4B095741398DC5F19BF454607 /* CIPlayerAssistor.release.xcconfig */;
+			baseConfigurationReference = B68C8035FA033C333DEE32DACEB1CB3F /* CIPlayerAssistor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1509,9 +1439,26 @@
 			};
 			name = Release;
 		};
+		F093AFC6D1E696FFEE126A369C2C5D95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 657C4D901E818B8F3F66B0CDD15EA5C5 /* OpenSSL-Universal.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 		F16DA0338DB0D785A99B547F8C2D8A9E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE622B90DE3C0DC8B11C941F95FA8F68 /* TXLiteAVSDK_Player.debug.xcconfig */;
+			baseConfigurationReference = 8038EC5E9027DFDE5B403F771EC96FBD /* TXLiteAVSDK_Player.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1522,6 +1469,39 @@
 				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAA157058481DA0E565B906DB133DCB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11B83797150315F2B1A7F994C459043A /* GCDWebServer.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GCDWebServer/GCDWebServer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GCDWebServer/GCDWebServer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/GCDWebServer/GCDWebServer.modulemap";
+				PRODUCT_MODULE_NAME = GCDWebServer;
+				PRODUCT_NAME = GCDWebServer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
@@ -1555,15 +1535,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		40E95713A7E2A3EBB4165ED2CDD28B11 /* Build configuration list for PBXNativeTarget "GCDWebServer" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				79BD09977A7DCB09B7E9237B05AE90A7 /* Debug */,
-				3BA96C5AADF539DC459B976156327EEC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1582,11 +1553,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9C286A3991F4C6A41E3DC321E660C1F8 /* Build configuration list for PBXAggregateTarget "OpenSSL-Universal" */ = {
+		7128809D7E68A7DE407B2B0ED9A678F0 /* Build configuration list for PBXNativeTarget "GCDWebServer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				971514BC014B4AE63EC543553957382C /* Debug */,
-				74FFD9E466DB9A11C34801D7AF188180 /* Release */,
+				FAA157058481DA0E565B906DB133DCB8 /* Debug */,
+				0122B6DC2D5D992E909BACC6850F14D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DB6FFD13D39DB8BBAE1FF0460962CB8 /* Build configuration list for PBXAggregateTarget "OpenSSL-Universal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F093AFC6D1E696FFEE126A369C2C5D95 /* Debug */,
+				C49B7E3C714B8AE804AFB951B3F2B579 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
