@@ -6,8 +6,6 @@ Pod::Spec.new do |s|
   s.authors = {"garenwang"=>"garenwang@tencent.com"}
   s.homepage = "https://cloud.tencent.com/"
   s.description = "腾讯云iOS-HLS播放器插件"
-  s.source = { :path => '.' }
-
   s.ios.deployment_target    = '10.0'
   s.ios.vendored_framework   = 'CIPlayerAssistor/CIPlayerAssistor.framework'
   s.dependency 'OpenSSL-Universal';
