@@ -8,14 +8,14 @@
   },
   "homepage": "https://cloud.tencent.com/",
   "description": "腾讯云iOS-HLS播放器插件",
-  "source": {
-    "path": "."
-  },
   "platforms": {
     "ios": "10.0"
   },
   "ios": {
     "vendored_frameworks": "CIPlayerAssistor/CIPlayerAssistor.framework"
+  },
+  "source": {
+    "git": "https://github.com/tencentyun/CIPlayerAssistor_iOS.git"
   },
   "dependencies": {
     "OpenSSL-Universal": [
