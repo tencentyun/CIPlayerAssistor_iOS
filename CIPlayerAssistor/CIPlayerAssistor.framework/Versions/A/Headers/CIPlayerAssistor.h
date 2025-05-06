@@ -21,7 +21,7 @@ typedef void (^CIPlayerAssistorCallBack)(NSString * _Nullable  url,NSError * _Nu
 /// 指定端口
 +(instancetype)singleAssistorWithPort:(NSInteger)port;
 
-/// 获取token，适用于共有读文件
+/// 使用token 构建播放URL，适用于共有读文件
 /// - Parameters:
 ///   - config: 媒体配置
 ///   - token: token
@@ -30,15 +30,25 @@ typedef void (^CIPlayerAssistorCallBack)(NSString * _Nullable  url,NSError * _Nu
                       withToken:(NSString *)token
                buildUrlcallBack:(CIPlayerAssistorCallBack)callBack;
 
-/// 获取token 以及鉴权签名 signature
+/// 使用token 以及鉴权签名 signature 构建播放URL
 /// - Parameters:
-///   - config:  媒体配置
+///   - config: 媒体配置
 ///   - token: token
 ///   - signature: 鉴权签名 signature
 ///   - callBack: 返回构建结果
 -(void)buildPlayerUrlWithConfig:(CIMediaConfig *)config
                       withToken:(NSString *)token
                   withSignature:(NSString *)signature
+               buildUrlcallBack:(CIPlayerAssistorCallBack)callBack;
+
+
+/// 使用 服务端返回的播放链接 构建播放URL
+/// - Parameters:
+///   - config: 媒体配置
+///   - url: 服务端返回的URL
+///   - callBack: 返回构建结果
+-(void)buildPlayerUrlWithConfig:(CIMediaConfig *)config
+                        withUrl:(NSString *)url
                buildUrlcallBack:(CIPlayerAssistorCallBack)callBack;
 @end
 

@@ -32,10 +32,9 @@
     [[CIPlayerAssistor singleAssistor] setDebug:NO];
     self.config = [[CIMediaConfig alloc]initWithFileUrl:InputConfig.fileUrl privateKey:sslRsa.privateKey];
     
-    [TokenBuilder getToken:sslRsa.publicKey fileURL:self.config.fileUrl protectContentKey:self.isPrivate callBack:^(NSString * _Nonnull token, NSString * _Nonnull signature) {
+    [TokenBuilder getToken:sslRsa.publicKey fileURL:self.config.fileUrl protectContentKey:self.isPrivate callBack:^(NSString * _Nonnull url) {
         dispatch_async(dispatch_get_main_queue(), ^{
-            [[CIPlayerAssistor singleAssistorWithPort:69874] buildPlayerUrlWithConfig:self.config withToken:token withSignature:signature buildUrlcallBack:^(NSString * _Nullable url, NSError * _Nullable error) {
-            
+            [[CIPlayerAssistor singleAssistor] buildPlayerUrlWithConfig:self.config withUrl:url buildUrlcallBack:^(NSString * _Nullable url, NSError * _Nullable error) {
                 AVPlayerItem *item = [[AVPlayerItem alloc] initWithURL:[NSURL URLWithString:url]];
                 self.myPlayer = [AVPlayer playerWithPlayerItem:item];
                 self.playerLayer = [AVPlayerLayer playerLayerWithPlayer:self.myPlayer];

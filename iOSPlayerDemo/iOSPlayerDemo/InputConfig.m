@@ -9,21 +9,21 @@
 
 @implementation InputConfig
 + (NSString *)bucketId{
-    return @"ci-h5-bj-1258125638";
+    return @"";
 }
 + (NSString *)object{
-    return @"hls/BigBuckBunny.m3u8";
+    return @"";
 }
 + (NSString *)fileUrl{
-    return   @"https://ci-h5-bj-1258125638.cos.ap-beijing.myqcloud.com/hls/BigBuckBunny.m3u8?ci-process=pm3u8";
+    return   @"https://ci-1251902136.cos.ap-chongqing.myqcloud.com/hls/encrypt/bunny.m3u8";
 }
 
 + (NSString *)playSkey{
-    return @"playkey";
+    return @"";
 }
 
 + (NSString *)appId{
-    return @"1258125638";
+    return @"";
 }
 
 
