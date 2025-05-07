@@ -11,7 +11,6 @@
 		40783D0A8CA89C1CFCB47CA4 /* Pods_iOSPlayerDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A129F320F930DECA1E5EBB21 /* Pods_iOSPlayerDemoTests.framework */; };
 		71182AECCDFA13649BA2DCD0 /* Pods_iOSPlayerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86B296DE67BCD241F88F4170 /* Pods_iOSPlayerDemo.framework */; };
 		D235C48B2B4D6DCC003D7682 /* TokenBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = D235C4882B4D6DCC003D7682 /* TokenBuilder.m */; };
-		D235C48C2B4D6DCC003D7682 /* QCloudJWTToken.m in Sources */ = {isa = PBXBuildFile; fileRef = D235C48A2B4D6DCC003D7682 /* QCloudJWTToken.m */; };
 		D235C48F2B4D714E003D7682 /* TXPlayerDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = D235C48D2B4D714D003D7682 /* TXPlayerDemoController.m */; };
 		D25B99BB2B0EF2D80032832A /* InputConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = D25B99BA2B0EF2D80032832A /* InputConfig.m */; };
 		D27D12602AFB64C600239D2F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D27D125F2AFB64C600239D2F /* AppDelegate.m */; };
@@ -55,8 +54,6 @@
 		B1E5F2225EACD4B9EF6DD455 /* Pods_iOSPlayerDemo_iOSPlayerDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSPlayerDemo_iOSPlayerDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D235C4872B4D6DCB003D7682 /* TokenBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TokenBuilder.h; sourceTree = "<group>"; };
 		D235C4882B4D6DCC003D7682 /* TokenBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TokenBuilder.m; sourceTree = "<group>"; };
-		D235C4892B4D6DCC003D7682 /* QCloudJWTToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCloudJWTToken.h; sourceTree = "<group>"; };
-		D235C48A2B4D6DCC003D7682 /* QCloudJWTToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCloudJWTToken.m; sourceTree = "<group>"; };
 		D235C48D2B4D714D003D7682 /* TXPlayerDemoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXPlayerDemoController.m; sourceTree = "<group>"; };
 		D235C48E2B4D714D003D7682 /* TXPlayerDemoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXPlayerDemoController.h; sourceTree = "<group>"; };
 		D25B99B92B0EF2D80032832A /* InputConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputConfig.h; sourceTree = "<group>"; };
@@ -167,8 +164,6 @@
 		D27D125D2AFB64C600239D2F /* iOSPlayerDemo */ = {
 			isa = PBXGroup;
 			children = (
-				D235C4892B4D6DCC003D7682 /* QCloudJWTToken.h */,
-				D235C48A2B4D6DCC003D7682 /* QCloudJWTToken.m */,
 				D235C4872B4D6DCB003D7682 /* TokenBuilder.h */,
 				D235C4882B4D6DCC003D7682 /* TokenBuilder.m */,
 				D27D125E2AFB64C600239D2F /* AppDelegate.h */,
@@ -448,7 +443,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D235C48B2B4D6DCC003D7682 /* TokenBuilder.m in Sources */,
-				D235C48C2B4D6DCC003D7682 /* QCloudJWTToken.m in Sources */,
 				D27D12662AFB64C600239D2F /* ViewController.m in Sources */,
 				D27D12602AFB64C600239D2F /* AppDelegate.m in Sources */,
 				D235C48F2B4D714E003D7682 /* TXPlayerDemoController.m in Sources */,
